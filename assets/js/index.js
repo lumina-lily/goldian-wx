@@ -35,7 +35,7 @@
         var _html = template('tplSlideJl', _data);
         $oSlide.find('.swiper-wrapper').html(_html);
         
-        $oSlide.find('img').css({
+        $oSlide.find('.slide-img').css({
             width: containerWidth,
             height: containerWidth / 2
         });

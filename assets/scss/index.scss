@@ -12,6 +12,13 @@ h1, h2, h3,h4,h5,h6 {
 	-webkit-margin-before: 0;
     -webkit-margin-after: 0;
 }
+
+.index{
+	.content{
+	width:100%;
+	}
+}
+
 .content{
 	width:100%;
 	background:#000000;
@@ -130,3 +137,27 @@ h1, h2, h3,h4,h5,h6 {
 	width:96%;
 	margin:0 auto;
 }   
+/*首页人文交流-前进按钮*/
+#slide-jl .swiper-button-prev,
+#slide-jl .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6.6%;
+  z-index: 99;
+}
+#slide-jl {
+  .swiper-button-prev {
+    left:6%;
+  }
+  .swiper-button-next {
+    right: 6%;
+  }
+}
+.swiper-button-next, .swiper-button-prev {
+	height: auto;
+	margin-top:0;
+}
+.swiper-button-prev,  .swiper-button-next {
+    background-image: none;
+}

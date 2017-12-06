@@ -20,7 +20,7 @@
 		<!-- header end -->
 		
 		<!-- container begin -->
-		<div class="container">
+		<div class="container index">
 			
 			<!-- slide begin -->
 			<div id="slide" class="swiper-container">
@@ -131,13 +131,17 @@
 					<div id="slide-jl" class="swiper-container">
 						<div class="swiper-wrapper"></div>
 						<!-- <div class="swiper-pagination"></div> -->
-						<div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+						<div class="swiper-button-prev">
+							<img src="../assets/imgs/icons/arrow-prev.png">
+						</div>
+                        <div class="swiper-button-next">
+                        	<img src="../assets/imgs/icons/arrow-next.png">
+                        </div>
 					</div>
 					<script id="tplSlideJl" type="text/html">
 						{{each list as value i}}
 						<div class="swiper-slide">
-							<a href="{{value.link}}"><img src="{{value.img}}" alt=""></a>
+							<a href="{{value.link}}"><img class="slide-img" src="{{value.img}}" alt=""></a>
 							<p class="word-jl">{{value.text}}</p>
 						</div>
 						{{/each}}
