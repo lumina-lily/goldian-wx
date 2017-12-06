@@ -1,6 +1,44 @@
 .join-us {
     margin-bottom: 10px;
     .nav-list {
-        
+        dt {
+            font-size: 14px;
+            line-height: 14px;
+            color: #dcb071;
+        }
+        dd {
+            line-height: 18px;
+            text-align: justify;
+            &.tip {
+                margin-top: 10px;
+                color: #dcb071;
+            }
+        }
+        .contact-way {
+            color: #333;
+            dl {
+                position: relative;
+                padding: 0 10px 10px 10px;
+                background-color: #fff;
+                dt {
+                    position: absolute;
+                    top: 10px;
+                    left: 2.2%;
+                    width: 10.4%;
+                }
+                dd {
+                    width: 86%;
+                    margin-left: 14%;
+                    &.tips {
+                        padding-top: 10px;
+                        color: #000;
+                        font-weight: bold;
+                    }
+                }
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
     } 
 }
