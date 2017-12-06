@@ -13,24 +13,15 @@ a:hover, a:focus, a:active { text-decoration: none; }
 .fr { float: right; }
 .col-last { margin-right: 0 !important; }
 
-.header {
-	width: 100%;
-	height: 50px;
-	background: #000;
-}
+.header { width: 100%; height: 50px; background: #000; }
 
 .container{ width: 100%; }
 .content img { display: block; width: 100%; }
 
-.footer {
-	width: 100%;
-	height: 50px;
-	background: #000;
-}
+.footer { width: 100%; height: 50px; background: #000; }
 
 #slide .swiper-pagination-bullet { background: #dcb071; }
 #slide .swiper-pagination-bullet.swiper-pagination-bullet-active { background: #dcb071; }
-
 
 #mask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background: rgba(0,0,0,0.3); }
 

@@ -20,16 +20,16 @@
         var _data = {
             list: [{
              	link: 'javascript:;',
-                img: '../assets/imgs/index/banner_01.jpg'
+                img: '../assets/imgs/index/banner.png'
             }, {
             	link: 'javascript:;',
-                img: '../assets/imgs/index/banner_01.jpg'
+                img: '../assets/imgs/index/banner.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/banner_01.jpg'
+                img: '../assets/imgs/index/banner.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/banner_01.jpg'
+                img: '../assets/imgs/index/banner.png'
             }]
         };
         var _html = template('tplSlide', _data);
