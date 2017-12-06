@@ -28,8 +28,11 @@ a:hover, a:focus, a:active { text-decoration: none; }
 .container .content .sliding-door .nav { border-bottom: 1px solid #d3a358; margin-bottom: 10px; }
 .container .content .sliding-door .nav a { display: inline-block; width: 33.3%; height: 28px; line-height: 28px; color: #d3a358; text-align: center; }
 .container .content .sliding-door .nav a.active { border-bottom: 4px solid #d3a358; }
-.container.comment .content .sliding-door .nav-list { width: 100%; height: 100px; background-color: #fff; }
+.container .content .sliding-door .banner { margin-bottom: 10px; }
+.container .content .sliding-door .banner .hide { display: none; }
+.container .content .sliding-door .nav-list { color: #fff; }
 
+.comment { margin-bottom: 10px; }
 
 .footer { width: 100%; padding: 10px 0; border-top: 1px solid #d3a358; color: #d3a358; }
 .footer .logo { display: block; width: 22%; margin-left: 3%; }
