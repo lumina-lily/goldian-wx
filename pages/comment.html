@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no" />
+		<title>comment html</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../assets/plugins/swiper/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
+	</head>
+	<body>
+		<!-- header begin -->
+		<div class="header">
+			
+		</div>
+		<!-- header end -->
+		
+		<!-- container begin -->
+		<div class="container">
+			
+			<!-- slide begin -->
+			<div id="slide" class="swiper-container">
+				<div class="swiper-wrapper"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<script id="tplSlide" type="text/html">
+				{{each list as value i}}
+				<div class="swiper-slide">
+					<a href="{{value.link}}"><img src="{{value.img}}" alt=""></a>
+				</div>
+				{{/each}}
+			</script>
+			<!-- slide end -->
+			
+			<!-- content begin -->
+			<div class="content">
+				
+				
+				
+			</div>
+			<!-- content end -->
+			
+		</div>
+		<!-- container end -->
+		
+		<!-- footer begin -->
+		<div class="footer">
+			
+		</div>
+		<!-- footer end -->
+		
+		<!-- javascript begin -->
+		<script src="../assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+		<script src="../assets/plugins/artTemplate/dist/template.js"></script>
+		<script src="../assets/plugins/swiper/swiper.min.js"></script>
+		<script src="../assets/js/comment.js"></script>
+		<!-- javascript end -->
+	</body>
+</html>

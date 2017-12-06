@@ -1,0 +1,36 @@
+html { -webkit-tap-highlight-color: transparent;  }
+body, p, h1, h2, h3, ul, dl, dt, dd, input, select ,textarea { margin: 0; padding: 0; }
+body { width: 100%; max-width: 640px; margin: 0 auto; background-color: #fff; font-family: "Arial","微软雅黑"; font-size: 12px; }
+input,button,select,textarea { outline:none; }
+li { list-style: none; }
+img { border: none; vertical-align: top; }
+a:link, a:visited { text-decoration: none; }
+a:hover, a:focus, a:active { text-decoration: none; }
+.hide {	display: none; }
+.clearfix { zoom: 1; }
+.clearfix:after { display: block; content: ''; clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+.col-last { margin-right: 0 !important; }
+
+.header {
+	width: 100%;
+	height: 50px;
+	background: #000;
+}
+
+.container{ width: 100%; }
+.content img { display: block; width: 100%; }
+
+.footer {
+	width: 100%;
+	height: 50px;
+	background: #000;
+}
+
+#slide .swiper-pagination-bullet { background: #dcb071; }
+#slide .swiper-pagination-bullet.swiper-pagination-bullet-active { background: #dcb071; }
+
+
+#mask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background: rgba(0,0,0,0.3); }
+
