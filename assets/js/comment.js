@@ -63,18 +63,21 @@
     function fnInitSlidDoor(){
     	var $oContent = $('.content'),
     		$oSlidDoor = $oContent.find('.sliding-door'),
+    		$oBanner = $oSlidDoor.find('.banner'),
+    		$aBannerItem = $oBanner.find('img'),
     		$oNav = $oSlidDoor.find('.nav'),
-    		$oNavItem = $oNav.find('a'),
+    		$aNavItem = $oNav.find('a'),
     		$oNavList = $oSlidDoor.find('.nav-list'),
-    		$oNavListItem = $oNavList.find('li');
+    		$aNavListItem = $oNavList.find('li');
     		
-		$oNavItem.on('click', function(){
+		$aNavItem.on('click', function(){
 			var _index = 0;
 			if(!$(this).hasClass('active')){
 				_index = $(this).index();
-				$oNavItem.removeClass('active');
+				$aNavItem.removeClass('active');
 				$(this).addClass('active');
-				$oNavListItem.hide().eq(_index).show();
+				$aBannerItem.hide().eq(_index).css('display','block');
+				$aNavListItem.hide().eq(_index).show();
 			}
 			
 		});
