@@ -23,11 +23,11 @@ h1, h2, h3,h4,h5,h6 {
 	width:100%;
 	background:#000000;
 	.section-title{
-	    width:96%;
+	    width:100%;
 	    margin:0 auto;
 	    color: #fff;
-	    height:54px;
-	    line-height:54px;
+	    height:38px;
+	    line-height:38px;
 	    border-bottom: 2px solid #eeeeed;
 	.title{
 	    font-size:14px;
@@ -46,10 +46,13 @@ h1, h2, h3,h4,h5,h6 {
     width:100%;
     margin:0 auto;
     background:#dcb071;
-    padding:10px 0;
+    padding-bottom:10px;
+    .section-title{
+	    width:96%;
+	}
     .news-con{
         width:92%;
-        margin:20px auto;
+        margin:10px auto;
         padding:6px 4px;
         border:2px solid #c09151;
     .picture-l {
@@ -70,24 +73,25 @@ h1, h2, h3,h4,h5,h6 {
             @extend %spill-over;
            }
 
-		  }		  .main-text{
+		  }		  
+		  .main-text{
 		    color:#fff;
 		    font-size:12px;
-            line-height:32px;
+            line-height:24px;
              @extend %spill-over;
               -webkit-line-clamp: 1;
 		  }
 		  .data {
 		    color:#fff;
-		    font-size:10px;
-            line-height:28px; 
+		    font-size:12px;
+            line-height:22px; 
 		  }
 		}
     }
 }
 .news-list {
 	width:96%;
-	margin:20px 3%;
+	margin:10px 3% 0;
 	.list {
        height:32px;
        line-height:32px;
@@ -95,17 +99,6 @@ h1, h2, h3,h4,h5,h6 {
 		  float:left;
 		  width:18%;
 		  font-size:12px;
-		  /*&:after {
-		   position: relative;
-		    width: 7px;
-		    height: 7px;
-		    background-color: #8c5f22;
-		    text-align: center;
-		    line-height:7px;
-		    border-radius: 50%;
-		    top: -3px;
-		    left: -3px;
-		}*/
 		  span{
 		    color:#fff;
 		  }
@@ -115,6 +108,17 @@ h1, h2, h3,h4,h5,h6 {
 		width:78%;
 		border-left:2px solid #8c5f22;
 		padding-left:10px;
+		 &::before {
+		    position: relative;
+		    width: 7px;
+		    height: 7px;
+		    background-color: #8c5f22;
+		    text-align: center;
+		    line-height:7px;
+		    border-radius: 50%;
+		    top: -3px;
+		    left: -3px;
+		}
 	    span{
 	       color:#fff;
 	       font-size:12px;
@@ -125,11 +129,13 @@ h1, h2, h3,h4,h5,h6 {
 	}
 }
 .industry{
+    width: 96%;
+    margin: 0 auto;
 	margin-top:8px;
 	.industry-con {
-	background:url(../assets/imgs/index/industry-bg.png);
+	background:url(../imgs/index/industry-bg.png);
 	background-size:contain;
-	padding:20px 2.6% 40px 2.6%;
+	padding: 10px 0 20px 0;
 	}
 } 
 
@@ -138,11 +144,14 @@ h1, h2, h3,h4,h5,h6 {
 	margin:0 auto;
 }   
 /*首页人文交流-前进按钮*/
+#slide-jl {
+	margin-top:10px;
+}
 #slide-jl .swiper-button-prev,
 #slide-jl .swiper-button-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  transform: translateY(-30%);
   width: 6.6%;
   z-index: 99;
 }
@@ -160,4 +169,21 @@ h1, h2, h3,h4,h5,h6 {
 }
 .swiper-button-prev,  .swiper-button-next {
     background-image: none;
+}
+.word-jl {
+	color:#b28956;
+	font-size:12px;
+	margin:10px 0px;
+	text-align: justify;
+}
+.IMAGE{
+     width:96%;
+     margin:0 auto;
+	#slide-IMAGE {
+	 margin:16px 0 20px 0;
+	.slide-img {
+	  width:47%;
+	  margin:0 auto;
+	}
+	}
 }

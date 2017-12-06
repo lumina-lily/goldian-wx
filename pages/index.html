@@ -147,7 +147,29 @@
 						{{/each}}
 					</script>
 			        <!-- slide end -->
-			
+	            </div>  
+	            <div class="IMAGE">
+	            	<div class="section-title">
+	                    <h4 class="title">人文形象 / IMAGE</h4>
+	                </div>
+	                <!-- slide begin -->
+					<div id="slide-IMAGE" class="swiper-container">
+						<div class="swiper-wrapper"></div>
+						<!-- <div class="swiper-pagination"></div> -->
+					
+					</div>
+					<script id="tplSlideIMAGE" type="text/html">
+						{{each list as value i}}
+						<div class="swiper-slide">
+							<a href="{{value.link}}"><img class="slide-img" src="{{value.img}}" alt=""></a>
+							{{each value.text as text idx}}
+								<p class="word-jl">{{text}}</p>
+							{{/each}}
+							
+						</div>
+						{{/each}}
+					</script>
+			        <!-- slide end -->
 	            </div>   
 			</div>
 			<!-- content end -->
