@@ -4,8 +4,8 @@
 		// init banner
         fnInitBanner();
 		
-		// init operation
-		//fnInitOperation();
+		// init sliding-door
+		fnInitSlidDoor();
 		
 	});
 	
@@ -56,6 +56,27 @@
             lazyLoading: true
         });
     }
+    
+    function fnInitSlidDoor(){
+    	var $oContent = $('.content'),
+    		$oSlidDoor = $oContent.find('.sliding-door'),
+    		$oNav = $oSlidDoor.find('.nav'),
+    		$oNavItem = $oNav.find('a'),
+    		$oNavList = $oSlidDoor.find('.nav-list'),
+    		$oNavListItem = $oNavList.find('li');
+    		
+		$oNavItem.on('click', function(){
+			var _index = 0;
+			if(!$(this).hasClass('active')){
+				_index = $(this).index();
+				$oNavItem.removeClass('active');
+				$(this).addClass('active');
+				$oNavListItem.hide().eq(_index).show();
+			}
+			
+		});
+    }
+    
     
     
 })();
