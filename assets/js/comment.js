@@ -1,12 +1,15 @@
 (function(){
 	$(function(){
 		
-		// init banner
-        fnInitBanner();
+		if ($('#slide').length > 0){
+			// init banner
+        	fnInitBanner();
+		}
 		
-		// init sliding-door
-		fnInitSlidDoor();
-		
+		if ($('.sliding-door').length > 0){
+			// init sliding-door
+			fnInitSlidDoor();
+		}
 	});
 	
 	// init banner
@@ -76,7 +79,5 @@
 			
 		});
     }
-    
-    
     
 })();
