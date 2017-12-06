@@ -24,7 +24,7 @@ a:hover, a:focus, a:active { text-decoration: none; }
 #slide .swiper-pagination-bullet { background: #dcb071; }
 #slide .swiper-pagination-bullet.swiper-pagination-bullet-active { background: #dcb071; }
 
-.container .content { width: 94%; margin: 10px auto; }
+.container .content { width: 94%; margin: 0 auto; }
 .container .content .sliding-door .nav { border-bottom: 1px solid #d3a358; margin-bottom: 10px; }
 .container .content .sliding-door .nav a { display: inline-block; width: 33.3%; height: 28px; line-height: 28px; color: #d3a358; text-align: center; }
 .container .content .sliding-door .nav a.active { border-bottom: 4px solid #d3a358; }
