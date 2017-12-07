@@ -1,0 +1,42 @@
+.humanity {
+    margin-bottom: 10px;
+    .content .sliding-door .nav a {
+        width: 50%;            
+    }
+    .nav-list {
+        dt {
+            font-size: 14px;
+            line-height: 14px;
+            color: #dcb071;
+        }
+        dd {
+            line-height: 18px;
+            text-align: justify;
+            &.tip {
+                padding-top: 10px;
+                border-top: 1px dashed #dcb071;
+                margin-top: 10px;
+                color: #dcb071;
+            }
+            &.tip-first {
+                padding-top: 0;
+                border-top: none;
+            }
+            &.img {
+                margin: 10px auto;
+            }
+            &.img-two img {
+                width: 49%;
+            }
+            &.img-three img {
+                width: 32%;
+                margin-right: 2%;
+            }
+            &.text-three span {
+                display: inline-block;
+                width: 32%;
+                margin-right: 2%;
+            }
+        }
+    } 
+}
