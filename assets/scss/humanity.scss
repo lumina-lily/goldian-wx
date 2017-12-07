@@ -90,3 +90,42 @@
     }
 }
 
+.humanity-tourism {
+    margin-bottom: 20px;
+    text-align: justify;
+    .content {
+        width: 100%;
+        p {
+            width: 94%;
+            margin: 0 auto;
+            &.title {
+                margin: 10px auto;
+                font-size: 16px;
+                line-height: 16px;
+                color: #dcb071;
+            }
+            &.secondary {
+                width: 100%;
+                padding-bottom: 10px;
+                border-bottom: 1px dashed #dcb071;
+                margin: 10px auto;
+                font-size: 14px;
+                line-height: 14px;
+                color: #fff;
+                text-indent: 3%;
+                &.no-line {
+                    padding-bottom: 0;
+                    border: none;
+                }
+            }
+            &.text {
+                line-height: 18px;
+                color: #fff;
+                &.btm {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+  
