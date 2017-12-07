@@ -25,11 +25,15 @@
             &.img {
                 margin: 10px auto;
             }
+            &.img img {
+                width: 98.8%;
+                border: 2px solid #dcb071;
+            }
             &.img-two img {
-                width: 49%;
+                width: 47.8%;
             }
             &.img-three img {
-                width: 32%;
+                width: 30.8%;
                 margin-right: 2%;
             }
             &.text-three span {
