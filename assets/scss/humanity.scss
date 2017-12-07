@@ -56,3 +56,34 @@
         margin: 0 auto 20px;        
     } 
 }
+.humanity-land {
+    margin-bottom: 20px;
+    .content {
+        width: 100%;
+        .title {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 16px;
+            color: #dcb071;
+            text-align: center;
+        }
+        .secondary {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 14px;
+            color: #fff;
+            text-align: center;
+        }
+        .box {
+            padding: 10px;
+            background-color: #fff;
+            color: #727171;
+            li {
+                width: 98%;
+                margin: 0 auto;
+                line-height: 16px;
+                text-align: justify;
+            }
+        }
+    }
+}
