@@ -109,21 +109,24 @@ h1, h2, h3,h4,h5,h6 {
 		border-left:2px solid #8c5f22;
 		padding-left:10px;
 		 &::before {
-		    position: relative;
-		    width: 7px;
-		    height: 7px;
-		    background-color: #8c5f22;
-		    text-align: center;
-		    line-height:7px;
-		    border-radius: 50%;
-		    top: -3px;
-		    left: -3px;
+		        content: '';
+			    position: relative;
+			    width: 8px;
+			    height: 8px;
+			    background-color: #8c5f22;
+			    text-align: center;
+			    line-height: 8px;
+			    border-radius: 50%;
+			    top: 12px;
+			    left: -15px;
+			    display: flex;
 		}
 	    span{
 	       color:#fff;
 	       font-size:12px;
 	       @extend %spill-over;
            -webkit-line-clamp: 1;
+            margin-top: -8px;
 	    }
        }		
 	}

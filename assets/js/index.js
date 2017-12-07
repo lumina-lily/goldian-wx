@@ -67,15 +67,15 @@
             list: [{
                 link: 'javascript:;',
                 img: '../assets/imgs/index/IMAGES1.png',
-                text:['人文艺术瑰宝','人文艺术瑰宝']
+                text:['人文艺术瑰宝','融合东西方文化精髓，历经多年潜心创作，海马龙、海马凤、和平艾琳娜三大人文艺术瑰宝绽放，共同传播“和平、真爱”的世界愿景，成为企业人文地产品牌的创新特色，并参与了多项国际文化交流活动，得到了国内外友人的广告关注和好评']
             }, {
                 link: 'javascript:;',
                 img: '../assets/imgs/index/IMAGES2.png',
-                text:['和平艾琳娜','和平艾琳娜']
+                text:['和平艾琳娜','融合东西方文化精髓，历经多年潜心创作，海马龙、海马凤、和平艾琳娜三大人文艺术瑰宝绽放，共同传播“和平、真爱”的世界愿景，成为企业人文地产品牌的创新特色，并参与了多项国际文化交流活动，得到了国内外友人的广告关注和好评融合东西方文化精髓，历经多年潜心创作，海马龙、海马凤、和']
             },{
                 link: 'javascript:;',
                 img: '../assets/imgs/index/IMAGES3.png',
-                text:['海马龙']
+                text:['海马龙','海马龙为海马与龙的结合，源自古老的东方大地，汲取西方文化的菁华，有着深厚的东西方文化历史底蕴。','海马龙','海马龙为海马与龙的结合，源自古老的东方大地，汲取西方文化的菁华，有着深厚的东西方文化历史底蕴。']
             }]
         };
         var _html = template('tplSlideIMAGE', _data);
@@ -97,5 +97,9 @@
             lazyLoading: true
         });
     }
-     
+    //slidebar  
+    // var headerH = $(".header").height(),
+    //     slideallW = $(".slideall").width(),
+    //     slideallH = $(".slideall").height() - headerH;
+
 })();

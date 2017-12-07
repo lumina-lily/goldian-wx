@@ -1,0 +1,84 @@
+h1, h2, h3,h4,h5,h6 {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.turelove .content .sliding-door .nav a{
+    width:25%;
+}
+
+.turelove{
+    margin-bottom:12px;
+	.tit {
+	  font-size:14px;
+	  color:#d3a358;
+	  margin-top:6px;
+	  height:24px;
+	  line-height:24px;
+	}
+	.para{
+	  font-size:12px;
+	  color:#fff;
+	  text-align:justify;
+	  margin:2px 0;
+	}
+	.pictureTL{
+	  margin:6px 0;
+	  img{
+	     width:48%;
+         border:2px solid #dcb071;
+      &.half-left{
+	    float:left;
+	  }
+	  &.half-right{
+	    float:right;
+	  }
+	  &.col-46 {
+	    width:46%;
+	  }
+	   &.col-50 {
+	    width:50.4%;
+	  }
+	  &.col-pic{
+        width:100%;
+        margin:8px 0;
+	  }
+	  &.col-41{
+	    width:41%;
+	  }
+	   &.col-55{
+	    width:55.4%;
+	  }
+	  }
+	  .half-left{
+	    float:left;
+	    width:48%; 
+	    img {
+	      width:100%;
+	    }
+	  }
+	  .half-right{
+	    float:right;
+	    width:48%;
+	     img {
+	      width:100%;
+	    }
+	  }
+
+	}
+	.page-v {
+	  width:100%;
+	  margin:10px 0;
+	  video{
+        width:100%;
+	  }
+	}
+	#page-v{
+	    margin-bottom:4px;
+	    padding-bottom:4px;
+	    border-bottom:1px dashed #dcb071;
+	  }
+	.space {
+	  margin-top:20px;
+	}
+}
