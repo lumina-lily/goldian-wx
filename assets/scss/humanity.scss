@@ -1,4 +1,49 @@
 .humanity {
+    .content {
+        width: 100%;
+        background: url(../imgs/index/industry-bg.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .humanity-list {
+        width: 94%;
+        padding: 10px 0;
+        margin: 0 auto 20px;        
+    } 
+}
+
+.humanity-land {
+    margin-bottom: 20px;
+    .content {
+        width: 100%;
+        .title {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 16px;
+            color: #dcb071;
+            text-align: center;
+        }
+        .secondary {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 14px;
+            color: #fff;
+            text-align: center;
+        }
+        .box {
+            padding: 10px;
+            background-color: #fff;
+            color: #727171;
+            li {
+                width: 98%;
+                margin: 0 auto;
+                line-height: 16px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.humanity-educ {
     margin-bottom: 10px;
     .content .sliding-door .nav a {
         width: 50%;            
@@ -44,46 +89,4 @@
         }
     }
 }
-.humanity-index {
-    .content {
-        width: 100%;
-        background: url(../imgs/index/industry-bg.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    .humanity-list {
-        width: 94%;
-        padding: 10px 0;
-        margin: 0 auto 20px;        
-    } 
-}
-.humanity-land {
-    margin-bottom: 20px;
-    .content {
-        width: 100%;
-        .title {
-            margin: 10px 0;
-            font-size: 16px;
-            line-height: 16px;
-            color: #dcb071;
-            text-align: center;
-        }
-        .secondary {
-            margin: 10px 0;
-            font-size: 14px;
-            line-height: 14px;
-            color: #fff;
-            text-align: center;
-        }
-        .box {
-            padding: 10px;
-            background-color: #fff;
-            color: #727171;
-            li {
-                width: 98%;
-                margin: 0 auto;
-                line-height: 16px;
-                text-align: justify;
-            }
-        }
-    }
-}
+
