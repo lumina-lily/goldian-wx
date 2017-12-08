@@ -131,6 +131,7 @@
 
 .humanity-healthy , .humanity-finance {
     margin-bottom: 20px;
+    text-align: justify;
     .title {
         margin: 10px auto;
         font-size: 16px;
@@ -149,4 +150,66 @@
         color: #fff;
     }
 }
-  
+
+.humanity-internet {
+    margin-bottom: 20px;
+    text-align: justify;
+    .content {
+        width: 100%;
+        p {
+            width: 94%;
+            margin: 0 auto;
+            &.title {
+                margin: 10px auto;
+                font-size: 16px;
+                line-height: 16px;
+                color: #dcb071;
+            }
+            &.secondary {
+                width: 100%;
+                margin: 10px auto;
+                font-size: 14px;
+                line-height: 14px;
+                color: #fff;
+            }
+            &.text {
+                line-height: 18px;
+                color: #fff;
+            }
+        }
+        
+        .box {
+            padding: 20px 3%;
+            background-color: #0a0b2f;
+            margin-top: 10px;
+            .img {
+                width: 35.6%;
+            }
+            dl {
+                width: 60%;
+                color: #fff;  
+                dt {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #dcb071;
+                }
+                dd {
+                    line-height: 18px;
+                    text-align: justify;
+                }
+                &.box-last{
+                    dt {
+                        padding: 20px 0;
+                        text-indent: 2em;
+                    }
+                    img {
+                        width: 74%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        
+    }
+}
