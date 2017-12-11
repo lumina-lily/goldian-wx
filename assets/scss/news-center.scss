@@ -1,0 +1,103 @@
+.news-center {
+    .title {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 16px;
+        color: #fff;
+    }
+    .news-box {
+        border: 2px solid #d3a358;
+        margin-bottom: 10px;
+        >img {
+            width: 36%;
+            border-right: 2px solid #d3a358;
+        } 
+        ul {
+            width: 58%;
+            margin-left: 3%;
+            li {
+                color: #fff;
+                text-align: justify;
+                &.titles {
+                    position: relative;
+                    margin: 6px 0;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #a06c26;
+                    overflow: hidden;
+                    &.overflow:after {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: block;
+                        content: '...';
+                        width: 14px;
+                        height: 18px;
+                        background-color: #000;
+                        line-height: 18px;
+                        color: #a06c26;
+                    }
+                }
+                &.info {
+                    width: 100%;
+                    margin-bottom: 8px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                &.date {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .news-list {
+        overflow: hidden;
+        li {
+            margin-bottom: 6px;
+            p {
+                height: 40px;
+                background-color: #d7ad73;
+                border-bottom: 4px solid #9d6519;
+                border-radius: 10px;
+                color: #6c4816;
+                &.fl {
+                    width: 13.2%;
+                    span {
+                        display: block;
+                        line-height: 12px;
+                        text-align: center;
+                        &.date {
+                            margin: 6px 0 4px;
+                            color: #fff;
+                        }
+                    }
+                }
+                &.fr {
+                    width: 77.2%;
+                    padding: 0 4%;
+                    font-size: 14px;
+                    line-height: 40px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }  
+        }
+    }
+    .btn-more {
+        display: block;
+        width: 80px;
+        margin: 10px auto 20px;
+        font-size: 14px;
+        line-height: 14px;
+        color: #fff;
+        text-align: center;
+        img {
+            width:  14px;
+            margin-right: 10px;
+        }
+    }
+}
