@@ -11,7 +11,12 @@
 			fnInitSlidDoor();
 		}
 		
+		// init menu mask
 		fnInitMask();
+		
+		// init menu nav
+		fnInitMenuNav();
+		
 	});
 	
 	// init banner
@@ -62,6 +67,7 @@
         });
     }
     
+    // init sliding-door 
     function fnInitSlidDoor(){
     	var $oContent = $('.content'),
     		$oSlidDoor = $oContent.find('.sliding-door'),
@@ -78,13 +84,17 @@
 				_index = $(this).index();
 				$aNavItem.removeClass('active');
 				$(this).addClass('active');
-				$aBannerItem.hide().eq(_index).css('display','block');
+				$aBannerItem.hide().eq(_index).show();
 				$aNavListItem.hide().eq(_index).show();
+				
+				$('.menu-nav:not(.hide)').find('li').removeClass('active').eq(_index).addClass('active');
+				
 			}
 			
 		});
     }
     
+    // init menu mask
     function fnInitMask(){
     	var $oHeader = $('.header'),
     		$oMenu = $oHeader.find('.menu'),
@@ -161,4 +171,76 @@
     		$(this).addClass('active');
     	});
     }
+    
+    // get url param
+	function GetQueryString(name) {
+	    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	    var r = window.location.search.substr(1).match(reg);
+	    if(r!=null)return  unescape(r[2]); return null;
+	}
+	
+	// init menu nav
+	function fnInitMenuNav(){
+		// get url param
+		var myurl=GetQueryString("classify")
+			_nav = 0,
+			_index = 0;
+		if(myurl !=null && myurl.toString().length>1)
+		{
+		  	switch (myurl){
+			  	case 'jtjs':
+			  		_nav = 0;
+			  		_index = 0;
+			  		break;
+		  		case 'rylc':
+		  			_nav = 0;
+		  			_index = 1;
+	  				break;
+				case 'dzkw':
+					_nav = 0;
+					_index = 2;
+			  		break;
+		  		case 'zaqy':
+		  			_nav = 3;
+		  			_index = 0;
+	  				break;
+				case 'zasx':
+			  		_nav = 3;
+			  		_index = 1;
+			  		break;
+		  		case 'love':
+	  				_nav = 3;
+	  				_index = 2;
+	  				break;
+				case 'zayx':
+			  		_nav = 3;
+			  		_index = 3;
+			  		break;
+		  		case 'rcln':
+		  			_nav = 4;
+					_index = 0;
+	  				break;
+				case 'zxns':
+					_nav = 4;
+					_index = 1;
+			  		break;
+		  		case 'lxwm':
+		  			_nav = 4;
+		  			_index = 2;
+	  				break;
+			  	default:
+			  		break;
+		  	}
+		  	var $aNav = $('.nav a'),
+		  		$aNavItem = $('.nav-list li'),
+		  		$aMenuNav = $('.menu-nav');
+		  	
+		  	$aNav.removeClass('active').eq(_index).addClass('active');
+		  	$aNavItem.hide().eq(_index).show();
+		  	$aMenuNav.addClass('hide').eq(_nav).removeClass('hide');
+		  	var $aMenuNavItem = $aMenuNav.eq(_nav).find('li');
+		  	$aMenuNavItem.removeClass('active').eq(_index).addClass('active');
+		}
+	}
+    
 })();
