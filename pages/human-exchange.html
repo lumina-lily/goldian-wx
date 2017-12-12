@@ -9,62 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../assets/plugins/swiper/swiper.min.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
-		<style>
-		.content-rwjl {
-			width: 100%;
-			overflow-x:hidden; 
-		}
-		.title-rwjl-width .tit{
-			color:#b28956;
-			font-size: 16px;
-		}
-		#max-pic {
-          position: relative;
-		}
-		#max-pic a.prev, #max-pic a.next {
-			width: 6.6%;
-			position: absolute;
-			top:50%;
-			transform:translateY(-50%);
-		}
-		#max-pic a.prev {
-			left:2.2%;
-		}
-		#max-pic a.next {
-			right:2.2%;
-		}
-		#min-pic {
-			overflow-x:auto;
-			position: relative;
-		}
-
-		#min-pic li{
-			float: left;
-			width:23%;
-			margin-right:1%;
-		}
-		#min-pic a.prev, #min-pic a.next {
-			width: 4.2%;
-			position: absolute;
-			top:50%;
-			transform:translateY(-50%);
-		}
-		#min-pic a.prev {
-			left:2.2%;
-		}
-		#min-pic a.next {
-			right:2.2%;
-		}
-		.rwjl-pic-note {
-		  color:#b28956;
-		  line-height: 18px;
-		}
-		.img-active {
-			border:2px solid #b28956;
-		}
-
-		</style>
-		
+		<link rel="stylesheet" type="text/css" href="../assets/css/human-exchange.css"/>
 	</head>
 	<body>
 		<!-- header begin -->
@@ -112,24 +57,31 @@
                         </a>
 	                </ul>  
 	                <ul id="min-pic" class="clearfix">
-                        <li class="img-active">
-                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s1.png" alt="">
-                        </li>
-                         <li>
-                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s2.png" alt="">
-                        </li>
-                         <li>
-                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s3.png" alt="">
-                        </li>
-                         <li>
-                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png" alt="">
-                        </li>
-                         <a class="prev">
-                        	<img src="../assets/imgs/icons/arrow-prev.png" alt="">
-                        </a>
-                        <a class="next">
-                        	<img src="../assets/imgs/icons/arrow-next.png" alt="">
-                        </a>
+	                	<div style="overflow-x: auto;">
+	                		<div style="min-width:1000px;width: 1000px;">
+	                			<li class="img-active">
+	                               <img src="../assets/imgs/humanistic-feelings/exchange-pic-s1.png" alt="">
+		                        </li>
+		                         <li>
+		                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s2.png" alt="">
+		                        </li>
+		                         <li>
+		                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s3.png" alt="">
+		                        </li>
+		                         <li>
+		                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png" alt="">
+		                        </li>
+		                          <li>
+		                            <img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png" alt="">
+		                        </li>
+		                         <a class="prev">
+		                        	<img src="../assets/imgs/icons/arrow-prev.png" alt="">
+		                        </a>
+		                        <a class="next">
+		                        	<img src="../assets/imgs/icons/arrow-next.png" alt="">
+		                        </a>
+	                		</div>
+	                	</div>
 	                </ul>
 	                <ul id="text">
                         <li>
@@ -193,62 +145,7 @@
 		<script src="../assets/plugins/artTemplate/dist/template.js"></script>
 		<script src="../assets/plugins/swiper/swiper.min.js"></script>
 		<script src="../assets/js/comment.js"></script>
-        <script>
-	       var $oContentRwjl = $(".content-rwjl"),
-	           $oMaxPic =$oContentRwjl.find("#max-pic"),
-	           $aMaxPicItem = $oMaxPic.find("li"),
-	           $aMaxPicBtn = $oMaxPic.find("a"),
-	           $oMinPic =$oContentRwjl.find("#min-pic"),
-	           $aMinPicItem = $oMinPic.find("li"),
-	           $aMinPicBtn = $oMinPic.find("a"),
-	           $oText =$oContentRwjl.find("#text"),
-	           $aTextItem = $oText.find("li"),
-	           _index = 0;
-	           $.change = {
-	           	changeIndex:function(_obj,_index){
-                    var _len = $aMaxPicItem.length;
-                    // alert(_obj);
-                    if(_obj != null){
-		           		 if($(_obj).hasClass("prev")){
-	                  
-	                  	if(_index ==0) {
-			            	_index=3;
-			            }
-	                  	else{
-			              	_index--;
-			            }
-	                  }else{
-	                   if (_len-1>_index &&_index>0){
-			              	_index++;
-			            } else if(_index ==0) {
-			            	_index++;
-			            } else {
-			            	_index = 0;
-			            }
-	                  }
-                    } 
-	           		$aMinPicItem.removeClass('img-active').eq(_index).addClass('img-active');
-	            	$aMaxPicItem.addClass('hide').eq(_index).removeClass('hide');
-	            	$aTextItem.addClass('hide').eq(_index).removeClass('hide');
-	           	}
-	           }
-                
-
-	           $aMinPicItem.on("click",function(){
-	            _index = $(this).index();
-	           		$.change.changeIndex(null,_index);
-	            })
-                 
-	            $aMaxPicBtn.on("click",function(){
-	             _index=$oMaxPic.find("li:not('.hide')").index();
-                 $.change.changeIndex($(this),_index);
-	            })
-
-	             $aMinPicBtn.on("click",function(){
-	             _index=$oMinPic.find(".img-active").index();
-                  $.change.changeIndex($(this),_index);
-	            })
-        </script>
+		<script src="../assets/js/human-exchange.js"></script>
 		<!-- javascript end -->
 	</body>
 </html>
