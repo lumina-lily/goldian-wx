@@ -43,5 +43,11 @@ a:hover, a:focus, a:active { text-decoration: none; }
 .footer p img, .footer p span { display: block; width: 100%; }
 .footer p span { line-height: 28px; text-align: center; color: #fff; }
 
-#mask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; background: rgba(0,0,0,0.3); }
-
+#mask { position: fixed; top: 0; left: -100%; width: 100%; height: 100%; border-top:1px solid #d3a358; overflow: hidden; background: rgba(0, 0, 0, 0.8); z-index: 999; }
+.menu-list { width: 50%; height: 100%; padding-top: 20px; border-right: 1px solid #d3a358; }
+.menu-list li a { display: block; height: 40px; margin-bottom: 10px; font-size: 14px; line-height: 40px; color: #d3a358; text-indent: 2em; }
+.menu-list li.active a{ background-color: #dcb071; color: #fff; }
+.menu-nav { width: 50%; margin-left: -1px; }
+.menu-nav li { width: 86%; margin: 20px auto 0; border-bottom: 1px solid #d3a358; }
+.menu-nav li a { display: block; font-size: 14px; line-height: 40px; color: #d3a358; text-indent: .5em; }
+.menu-nav li.active a { color: #fff; }
