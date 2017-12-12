@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5, h6 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
+
+.HM-values {
+  width: 100%;
+  margin-bottom: 6px; }
+.HM-values .content .sliding-door .nav a {
+  width: 50%; }
+.HM-values .tit {
+  font-size: 14px;
+  color: #d3a358;
+  margin-top: 6px;
+  height: 24px;
+  line-height: 24px; }
+.HM-values .para {
+  font-size: 12px;
+  color: #fff;
+  text-align: justify;
+  margin: 6px 0; }
+.HM-values .pictrue-feeling {
+  margin: 12px 0; }
+.HM-values .pictrue-feeling img {
+  width: 48%;
+  border: 2px solid #dcb071; }
+.HM-values .pictrue-feeling img.half-left {
+  float: left; }
+.HM-values .pictrue-feeling img.half-right {
+  float: right; }
+.HM-values .pictrue-feeling img.col-54 {
+  float: left;
+  width: 54.9%; }
+.HM-values .pictrue-feeling img.col-all {
+  width: 100%; }
+.HM-values .pictrue-feeling img.col-41 {
+  float: right;
+  width: 41.9%; }
+.HM-values .pictrue-feeling img.col-37 {
+  float: left;
+  width: 37%; }
+.HM-values .pictrue-feeling .col-33 {
+  float: left;
+  width: 33.3%; }
+.HM-values .pictrue-feeling .col-33 img {
+  width: 60.8%;
+  margin: 0 auto;
+  border: none; }
+.HM-values .pictrue-feeling .col-33 .tit {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+.HM-public .content .sliding-door .nav a, .HM-treasure .content .sliding-door .nav a {
+  width: 33.3%; }
+
+/*# sourceMappingURL=humanistic-feelings.css.map */
