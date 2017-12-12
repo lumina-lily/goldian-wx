@@ -1,0 +1,12 @@
+.join-us { margin-bottom: 10px; }
+.join-us .nav-list dt { font-size: 14px; line-height: 14px; color: #dcb071; }
+.join-us .nav-list dd { line-height: 18px; text-align: justify; }
+.join-us .nav-list dd.tip { margin-top: 10px; color: #dcb071; }
+.join-us .nav-list .contact-way { color: #333; }
+.join-us .nav-list .contact-way dl { position: relative; padding: 0 10px 10px 10px; background-color: #fff; }
+.join-us .nav-list .contact-way dl dt { position: absolute; top: 10px; left: 2.2%; width: 10.4%; }
+.join-us .nav-list .contact-way dl dd { width: 86%; margin-left: 14%; }
+.join-us .nav-list .contact-way dl dd.tips { padding-top: 10px; color: #000; font-weight: bold; }
+.join-us .nav-list .contact-way p { margin-top: 10px; }
+
+/*# sourceMappingURL=join-us.css.map */
