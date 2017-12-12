@@ -87,7 +87,9 @@
 				$aBannerItem.hide().eq(_index).show();
 				$aNavListItem.hide().eq(_index).show();
 				
-				$('.menu-nav:not(.hide)').find('li').removeClass('active').eq(_index).addClass('active');
+				if(!$(this).hasClass('no-nav')){
+					$('.menu-nav:not(.hide)').find('li').removeClass('active').eq(_index).addClass('active');
+				}
 				
 			}
 			
