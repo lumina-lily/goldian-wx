@@ -11,27 +11,18 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/human-exchange.css"/>
 		<style type="text/css">
-			.ban{ width:100%; position:relative; }
-			.ban2{ width:100%; position:relative; overflow:hidden;}
-			.ban2 ul{ position:absolute; left:0; top:0;}
-			.ban2 ul li{ width:100%;}
-			.prev{ float:left; cursor:pointer;}
-			.num{ height:82px;overflow:hidden; width:100%; position:relative;float:left;}
-			.min_pic{ width:100%;}
-			.num ul{ position:absolute; left:0; top:0;}
-			.num ul li{ width:84px; margin-right:6px; padding:1px;}
-			.num ul li.on{ border:1px solid #b28956; padding:0;}
-			.prev_btn1{ width:16px; text-align:center;  cursor:pointer; float:left;position: relative;top:36px; z-index: 99;}
-			.next_btn1{  width:16px; text-align:center; height:18px;cursor:pointer;float:right;position: relative;top:-36px; z-index: 99;}
-			.prev1{ position:absolute; top:50%; left:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
-			.next1{ position:absolute; top:50%; right:20px; width:28px; height:51px;z-index:9;cursor:pointer;}
-			.mhc{ background:#000; width:100%;opacity:0.5;-moz-opacity:0.5;filter:alpha(Opacity=50); position:absolute; left:0; top:0; display:none;}
-			.pop_up{ width:500px; height:500px; padding:10px; background:#fff; position:fixed; -position:absolute; left:50%; top:50%; margin-left:-255px; margin-top:-255px; display:none; z-index:99;}
-			.pop_up_xx{ width:40px; height:40px; position:absolute; top:-40px; right:0; cursor:pointer;}
-			.pop_up2{ width:500px; height:500px; position:relative; overflow:hidden;}
-			.pop_up2{ width:500px; height:500px; position:relative; overflow:hidden; float:left;}
-			.pop_up2 ul{ position:absolute; left:0; top:0;}
-			.pop_up2 ul li{ width:500px; height:500px; float:left;}
+			.ban{ max-width:640px; margin: 0 auto;}
+			.ban  img { display: block; width: 100%; }
+			#ban_pic{ width:100%; position:relative; overflow:hidden;}
+			.ban2 ul li{ float: left; }
+			.prev1{ position:absolute; top:50%; left:20px; width:7.4%; z-index:9; transform: translateY(-50%);}
+			.next1{ position:absolute; top:50%; right:20px; width:7.4%; z-index:9; transform: translateY(-50%);}
+			.min_pic{ margin-top:10px; width:100%; position: relative; overflow: hidden;}
+			.min_pic ul li{ float: left; margin-right:5px; padding:1px;}
+			.min_pic ul li.on{ border:1px solid #d3a358; padding:0;}
+			.prev_btn1{ position: absolute; top: 50%; left: 10px; width: 4%; transform: translateY(-50%); }
+			.next_btn1{ position: absolute; top: 50%; right: 10px; width: 4%; transform: translateY(-50%); }
+			#text { margin-top: 10px; }
 		</style>
 	</head>
 	<body>
@@ -58,40 +49,35 @@
 		        <!-- sliding door end -->
 
 		        <div class="ban" id="demo1">
-					<div class="ban2" id="ban_pic1">
-						<div class="prev1" id="prev1"><img src="../assets/imgs/icons/arrow-prev.png"  alt=""></div>
-						<div class="next1" id="next1"><img src="../assets/imgs/icons/arrow-next.png"  alt=""></div>
+					<div class="ban2" id="ban_pic">
 						<ul class="clearfix">
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b1.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b2.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b3.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b4.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b1.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b2.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b3.png"  alt=""></a></li>
-							<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-b4.png"  alt=""></a></li>
-							
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b1.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b2.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b3.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b4.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b1.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b2.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b3.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-b4.png" alt=""/></li>
 						</ul>
+						<div class="prev1" id="prev1"><img src="../assets/imgs/icons/arrow-prev.png" alt=""/></div>
+						<div class="next1" id="next1"><img src="../assets/imgs/icons/arrow-next.png" alt=""/></div>
 					</div>
-					<div class="min_pic">
-						<div class="prev_btn1" id="prev_btn1"><img src="../assets/imgs/icons/arrow-prev.png" alt=""></div>
-						<div class="num clearfix" id="ban_num1">
-							<ul class="clearfix">
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s1.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s2.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s3.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s1.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s2.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s3.png"  alt=""></a></li>
-								<li><a href="javascript:;"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png"  alt=""></a></li>
-								
-							</ul>
-						</div>
-						<div class="next_btn1" id="next_btn1"><img src="../assets/imgs/icons/arrow-next.png" alt=""></div>
-
+					<div class="min_pic" id="ban_num">
+						<div class="prev_btn1" id="prev_btn1"><img src="../assets/imgs/icons/arrow-prev.png" alt=""/></div>
+						<ul class="clearfix">
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s1.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s2.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s3.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s1.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s2.png" alt=""/></li>
+							<li><img src="../assets/imgs/humanistic-feelings/exchange-pic-s3.png" alt=""/></li>
+							<li class="last-col"><img src="../assets/imgs/humanistic-feelings/exchange-pic-s4.png" alt=""/></li>
+						</ul>
+						<div class="next_btn1" id="next_btn1"><img src="../assets/imgs/icons/arrow-next.png" alt=""/></div>
 					</div>
-                </div>
+				</div>
 				<ul id="text">
                     <li>
                         <p class="rwjl-pic-note"> 
@@ -218,34 +204,22 @@
 		<script src="../assets/plugins/jquery/jquery-2.1.4.min.js"></script>
 		<script src="../assets/plugins/pic_tab.js"></script>
 		<script src="../assets/js/comment.js"></script>
-		
 		 <script >
 			$('#demo1').banqh({
 			    box:"#demo1",//总框架
-			    pic:"#ban_pic1",//大图框架
-			    pnum:"#ban_num1",//小图框架
-			    prev_btn:"#prev_btn1",//小图左箭头
-			    next_btn:"#next_btn1",//小图右箭头
-			    pop_prev:"#prev2",//弹出框左箭头
-			    pop_next:"#next2",//弹出框右箭头
-			    prev:"#prev1",//大图左箭头
-			    next:"#next1",//大图右箭头
-			    pop_div:"#demo2",//弹出框框架
-			    pop_pic:"#ban_pic2",//弹出框图片框架
-			    pop_xx:".pop_up_xx",//关闭弹出框按钮
-			    mhc:".mhc",//朦灰层
-			    autoplay:true,//是否自动播放
-			    interTime:5000,//图片自动切换间隔
-			    delayTime:400,//切换一张图片时间
-			    pop_delayTime:400,//弹出框切换一张图片时间
-			    order:0,//当前显示的图片（从0开始）
-			    picdire:true,//大图滚动方向（true为水平方向滚动）
-			    mindire:true,//小图滚动方向（true为水平方向滚动）
-			    min_picnum:4,//小图显示数量
-			    pop_up:true//大图是否有弹出框
+				pic:"#ban_pic",//大图框架
+				pnum:"#ban_num",//小图框架
+				prev_btn:"#prev_btn1",//小图左箭头
+				next_btn:"#next_btn1",//小图右箭头
+				prev:"#prev1",//大图左箭头
+				next:"#next1",//大图右箭头
+				autoplay:true,//是否自动播放
+				interTime:5000,//图片自动切换间隔
+				delayTime:400,//切换一张图片时间
+				order:0,//当前显示的图片（从0开始）
+				min_picnum:4//小图显示数量
 			})
 		</script>
-	
 		<!-- <script src="../assets/js/human-exchange.js"></script> -->
 		<!-- javascript end -->
 	</body>
