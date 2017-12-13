@@ -30,8 +30,11 @@
 		#min-pic li{
 			float: left;
 			width:84px;
-			margin-right:1%;
+			margin-right:6px;
 		}
+			/*#min-pic li::last-child{
+			margin-right:0px;
+		}*/
 		#min-pic a.prev, #min-pic a.next {
 			width: 4.2%;
 			position: absolute;
