@@ -29,7 +29,7 @@ $.fn.banqh = function(can){
 	var picw = $(can.pic).find('ul li').outerWidth(true);
 
 	// var picw = $(can.pic).find('ul li').width();
-	var pich = $(can.pic).find('ul li').outerHeight(true);
+	var pich = $(can.pic).find('ul li').height();
 	var poppicw = $(can.pop_pic).find('ul li').outerWidth(true);
 	var picminnum = $(can.pnum).find('ul li').length;
 	var picpopnum = $(can.pop_pic).find('ul li').length;
