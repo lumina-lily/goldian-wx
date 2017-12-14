@@ -56,8 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 .turelove #page-v {
   margin-bottom: 4px;
   padding-bottom: 4px;
-  border-bottom: 1px dashed #dcb071; }
+  width: 100%; }
 .turelove .space {
   margin-top: 20px; }
+
+.pictureTL .list {
+  margin: 6px 0; }
 
 /*# sourceMappingURL=turelove99.css.map */

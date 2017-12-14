@@ -10,20 +10,6 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/human-exchange.css"/>
-		<style type="text/css">
-			.ban{ max-width:640px; margin: 0 auto;}
-			.ban  img { display: block; width: 100%; }
-			#ban_pic{ width:100%; position:relative; overflow:hidden;}
-			.ban2 ul li{ float: left; }
-			.prev1{ position:absolute; top:50%; left:20px; width:7.4%; z-index:9; transform: translateY(-50%);}
-			.next1{ position:absolute; top:50%; right:20px; width:7.4%; z-index:9; transform: translateY(-50%);}
-			.min_pic{ margin-top:10px; width:100%; position: relative; overflow: hidden;}
-			.min_pic ul li{ float: left; margin-right:5px; padding:1px;}
-			.min_pic ul li.on{ border:1px solid #d3a358; padding:0;}
-			.prev_btn1{ position: absolute; top: 50%; left: 10px; width: 4%; transform: translateY(-50%); }
-			.next_btn1{ position: absolute; top: 50%; right: 10px; width: 4%; transform: translateY(-50%); }
-			#text { margin-top: 10px; }
-		</style>
 	</head>
 	<body>
 		<!-- header begin -->
@@ -47,7 +33,9 @@
 				</div>
 
 		        <!-- sliding door end -->
-
+                <h5 class="exchange-tit">
+                	人文交流
+                </h5>
 		        <div class="ban" id="demo1">
 					<div class="ban2" id="ban_pic">
 						<ul class="clearfix">
@@ -213,14 +201,13 @@
 				next_btn:"#next_btn1",//小图右箭头
 				prev:"#prev1",//大图左箭头
 				next:"#next1",//大图右箭头
-				autoplay:true,//是否自动播放
+				autoplay:false,//是否自动播放
 				interTime:5000,//图片自动切换间隔
 				delayTime:400,//切换一张图片时间
 				order:0,//当前显示的图片（从0开始）
 				min_picnum:4//小图显示数量
 			})
 		</script>
-		<!-- <script src="../assets/js/human-exchange.js"></script> -->
 		<!-- javascript end -->
 	</body>
 </html>

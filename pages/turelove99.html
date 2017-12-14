@@ -34,10 +34,10 @@
 						<img src="../assets/imgs/turelove99/image-banner.png" class="hide" />
 					</p>
 					<p class="nav clearfix">
-						<a href="javascript:;" class="active fl">真爱起源</a>
-						<a href="javascript:;" class="fl">真爱手心</a>
-						<a href="javascript:;" class="fl">99真爱节</a>
-						<a href="javascript:;" class="fl">真爱影像</a>
+						<a href="javascript:;" class="active fl" id="nav1">真爱起源</a>
+						<a href="javascript:;" class="fl" id="nav2">真爱手心</a>
+						<a href="javascript:;" class="fl" id="nav3">99真爱节</a>
+						<a href="javascript:;" class="fl" id="nav4">真爱影像</a>
 					</p>
 					<ul class="nav-list">
 						<li>
@@ -87,9 +87,7 @@
 						   	<p class="para">
 						   		里约奥运会开幕不久，真爱手心惊艳亮相在纽约时代广场。在世界的“十字街头”、国内外媒体报道、不同种族之间，流传着这个特别的手势。它用双手相抵环扣，捧出一颗“真爱之心”。地表达着人类共同的爱与愿望，却毫无防备地骤成全球风靡时尚的人文符号。
 						   	</p>
-						   	<div class="page-v">
-							  	<p style="text-align: center"><iframe class="video_iframe" style="z-index:1;" src="http://v.qq.com/iframe/player.html?vid=y0323pm2r1n&amp;width=360&amp;height=300&amp;auto=0" allowfullscreen="" frameborder="0" height="300" width="360"></iframe></p>
-							</div>	
+						   	<div class="page-v"></div>	
 
 						   	<p class="para">
 						   	  正如奥运五环所象征的，五大洲接联一体，全人类团结一致。真爱手心意喻着全世界人民心心相连，真爱无界。
@@ -194,35 +192,30 @@
 						   	<p class="para">
 						   	   国际巨星林志玲在御珑宫廷的三个梦
 						   	</p>
-                            <div class="page-v" id="page-v">
-                              	<p style="text-align: center">
-                              		<iframe id="video" class="video_iframe" style="z-index:1;" src="http://v.qq.com/iframe/player.html?vid=a0324jpbw0w&amp;auto=0" allowfullscreen="" frameborder="0"  width="100%"></iframe>
-                              	</p>
-                              <div class="pictureTL clearfix"> 
+                            <div class="page-v" id="page-v"></div>  
+							<div class="pictureTL clearfix" style="border-bottom:1px dashed #dcb071;"> 
                               	<div class="list half-left" >
-                              		<img data-url="http://v.qq.com/iframe/player.html?vid=a0324jpbw0w&amp;width=360&amp;auto=0"  src="../assets/imgs/turelove99/ZLdream1.png" alt="">
+                              		<img data-src="http://v.qq.com/iframe/player.html?vid=a0324jpbw0w&amp;width=360&amp;auto=0"  src="../assets/imgs/turelove99/ZLdream1.png" alt="">
                                     <h5 class="tit">
 									  妈妈的味道
 								   	</h5>
 								   	<p class="para">真爱,是无怨无悔的付出</p>
                               	</div>
 						   		<div class="list half-right">
-						   		  <img data-url="http://v.qq.com/iframe/player.html?vid=t0324fj8xzv&amp;width=360&amp;auto=0" src="../assets/imgs/turelove99/ZLdream2.png" alt="">
+						   		  <img data-src="http://v.qq.com/iframe/player.html?vid=t0324fj8xzv&amp;width=360&amp;auto=0" src="../assets/imgs/turelove99/ZLdream2.png" alt="">
 						   		  <h5 class="tit">
 								  心中的白马王子
 							   	</h5>
 							   	<p class="para">真爱,是值得等待的365天</p>
 						   	    </div>
                               	<div  class="list half-left" >
-                              		<img data-url="http://v.qq.com/iframe/player.html?vid=c0324kxkkx2&amp;width=360&amp;auto=0" src="../assets/imgs/turelove99/ZLdream3.png" alt="">
+                              		<img data-src="http://v.qq.com/iframe/player.html?vid=c0324kxkkx2&amp;width=360&amp;auto=0" src="../assets/imgs/turelove99/ZLdream3.png" alt="">
                                     <h5 class="tit">
 									  世界的南极
 								   	</h5>
 								   	<p class="para">真爱，是终身追求的信仰</p>
                               	</div>
                               </div>
-                            </div>  
-
 
 						   	<h5 class="tit">
 							  真爱之歌
@@ -321,20 +314,40 @@
 		<script src="../assets/plugins/swiper/swiper.min.js"></script>
 		<script src="../assets/js/comment.js"></script>	
 		<script>
-		(function(){  
+		    (function(){  
 			    $(function(){
 			    	var indexImg = $(".pictureTL .list img"); 
-			        indexImg.click(function(){
-			         var _url=$(this).attr("data-url");
-			         $("#video").attr("src",_url);
-			        
+			        indexImg.on("click",function(){
+			         var _src=$(this).attr("data-src");
+			         $("#v-iframe").attr("src",_src);
+			        // alert($("#v-iframe").length);
 			      });
 			    })
 			    $(".nav a").on("click",(function(){
-                      document.getElementById('video').pause();
+                   var _index = $(this).index(),
+                   	   _width = $('.content').width(),
+                       _vid = "",
+                       _html = '<p style="text-align: center;width:'+_width+'px;"><iframe id="v-iframe" class="video_iframe" style="z-index:1; width:'+_width+'px; margin:0 auto; display:block;" src="http://v.qq.com/iframe/player.html?vid=',
+                       _html2 = '&amp;width='+_width+'&amp;auto=0" allowfullscreen="" frameborder="0"></iframe></p>';
+
+                   if (_index==0 || _index==2) {
+                    $(".nav-list .page-v").html("");
+                     // alert(111);
+                   } else if (_index==1) {
+                   	
+                   	 _vid = "y0323pm2r1n";
+                   	 $(".nav-list .page-v").eq(1).html("");
+                   	 $(".nav-list .page-v").eq(0).html(_html+_vid+_html2);
+                    
+                   }else{
+                     _vid = "a0324jpbw0w";
+                   	 $(".nav-list .page-v").eq(0).html("");
+                   	 $(".nav-list .page-v").eq(1).html(_html+_vid+_html2);
+                   }
+
 			    	})
-			    	)
-			 
+			    )
+		
         })(); 
 		</script>	
 		<!-- javascript end -->
