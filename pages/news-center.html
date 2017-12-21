@@ -53,7 +53,6 @@
 				<a href="javascript:;" class="btn-more clearfix"><img src="../assets/imgs/icons/icon_arrow_down.png" class="fl"/>加载更多</a>
 			</div>
 			<!-- content end -->
-			
 		</div>
 		<!-- container end -->
 		
@@ -130,6 +129,42 @@
 		<script src="../assets/plugins/artTemplate/dist/template.js"></script>
 		<script src="../assets/js/comment.js"></script>
 		<script src="../assets/js/news-center.js"></script>
+				<!-- 	<script>
+			function fnInitNwesList(){
+				var $oContent = $('.content'),
+			        $oNewsBox =$oContent.find('.news-box'),
+			        $oTitles = $oNewsList.find('.title'),
+			        $oNewsList = $oContent.find('.news-list'),
+			        $aItems = $oNewsList.find('li'),
+			        $oBtnMore = $oContent.find('.btn-more'),
+			        _height = 0;
+			        var titHeight = $oTitles.height();
+                    if(titHeight>36){
+                    	$oTitles.addClass('overflow').css('height','36px');
+                    }
+                    _height = ($aItems.height()+6)*6;
+
+                    $oNewsList.css('height',_height);
+                    $oBtnMore.on("click",function(){
+                      var itemNum = $oNewsList.height()/($aItems.height()+6),
+                          itemLength = $Items.length;
+                       if(itemLength-itemNum>5){
+                       	  _height += _height;
+                       	  $oNewsList.animate({
+                       	  	height:_height;
+                       	  }, 500)
+                       } else{
+                       	_height = _height +($aItems.height()+6)*(itemLength-itemNum);
+                       	$oNewsList.animate({
+                       		height:_height
+                       	}, 500,function(){
+                       		$ObtnMore.text('已加载全部').unbind('click');
+                       	});
+                       }  
+                    });
+			}
+		</script> -->
 		<!-- javascript end -->
+
 	</body>
 </html>

@@ -1,5 +1,8 @@
 (function(){
 	$(function(){
+		 var $oHeader = $('.header'),
+		     _HeaderH = $oHeader.height() + 28;
+		    $('.container').css('padding-top', _HeaderH);
 		
 		if ($('#slide').length > 0){
 			// init banner
@@ -30,16 +33,22 @@
         var _data = {
             list: [{
              	link: 'javascript:;',
-                img: '../assets/imgs/index/banner.png'
+                img: '../assets/imgs/index/banner1.png'
             }, {
             	link: 'javascript:;',
-                img: '../assets/imgs/index/banner.png'
+                img: '../assets/imgs/index/banner2.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/banner.png'
+                img: '../assets/imgs/index/banner3.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/banner.png'
+                img: '../assets/imgs/index/banner4.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/banner5.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/banner6.png'
             }]
         };
         var _html = template('tplSlide', _data);
@@ -244,5 +253,6 @@
 		  	$aMenuNavItem.removeClass('active').eq(_index).addClass('active');
 		}
 	}
+
     
 })();

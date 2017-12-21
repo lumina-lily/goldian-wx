@@ -58,7 +58,7 @@
                  	var _left = $oPicList.css('margin-left');
                  	 // console.log(_left);
                  	_left=_left.substr(0, _left.length-2);
-                 	 console.log(_left+'-----'+_index);
+                 	 // console.log(_left+'-----'+_index);
                  	$oPicList.css("margin-left",_left+_minwidth);
                  }
 			    },

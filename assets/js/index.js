@@ -4,8 +4,8 @@
 		// init banner
         fnInitJlBanner();
 		fnInitIMAGEBanner();
-		// init operation
-		//fnInitOperation();
+		// change communication
+        fnChangeIndex1();
 		
 	});
     //COMMUNICATION  banner
@@ -19,20 +19,43 @@
         var _data = {
             list: [{
                 link: 'javascript:;',
-                img: '../assets/imgs/index/index-jl1.png',
-                text:'●金大元集团董事长顾文元先生在联合国总部获颁“世界和平贡献奖”，顾先生与联合国助理秘书长托马斯·盖斯握手畅谈。'
+                img: '../assets/imgs/index/index-jl1.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/index-jl2.png',
-                text:"●高迪安集团的“人文”，共鸣于掌声响起的国际人文交流。在联合国总部，在联合国教科文组织，在B20峰会，在亚欧国际教育论坛，在许多世界级人物汇聚的场合，高迪安总是以自己的方式，向众人传递和分享着属于全社会的人文之光。高迪安集团董事长顾文元先生在联合国总部获颁“世界和平贡献奖”，顾先生与联合国助理秘书长托马斯·盖斯握手。"
+                img: '../assets/imgs/index/index-jl2.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/index-jl3.png',
-                text:"●高迪安董事长顾文元先生在美国总统克林顿家中作客，并赠予海马龙、海马凤，与克林顿总统一家共叙人文与真爱。"
+                img: '../assets/imgs/index/index-jl3.png'
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/index-jl4.png',
-                text:"●高迪安董事长顾文元先生受邀出席德国总统花园庆典，在庆典上将海马龙、海马凤赠予德国联邦总统阿希姆•高克先生，高克总统盛赞“这是我见过的最美的礼物”。"
+                img: '../assets/imgs/index/index-jl4.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl5.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl6.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl7.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl8.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl9.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl10.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl11.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl12.png'
+            }, {
+                link: 'javascript:;',
+                img: '../assets/imgs/index/index-jl13.png'
             }]
         };
         var _html = template('tplSlideJl', _data);
@@ -55,8 +78,44 @@
             prevButton:'.swiper-button-prev',
             nextButton:'.swiper-button-next'
         });
+       
+
+    }
+    function fnChangeIndex1(){
+       var $oSlideJl = $('#slide-jl'),
+            $aSlide =$oSlideJl.find('.swiper-slide'),
+            $oJlList = $('.jl-list'),
+            $aJlItem = $oJlList.find('li'),
+            $oBtnPrev = $oSlideJl.find('.swiper-button-prev'),
+            $oBtnNext = $oSlideJl.find('.swiper-button-next'),
+            _len = $aJlItem.length;
+            console.log(_len);
+            _index = 0;
+            $oBtnPrev.on('click',function(){
+                // _index = $(this).siblings('.swiper-wrapper').find('.swiper-slide-active').index();
+                 if (_index == 0) {
+                    _index = 12;
+                 }else{
+                  _index -= 1;
+               }
+              console.log(_index);
+             $aJlItem.addClass('hide').eq(_index).removeClass('hide');
+            });
+             $oBtnNext.on('click',function(){
+                // _index = $(this).siblings('.swiper-wrapper').find('.swiper-slide-active').index();
+                  if(_index == 12){
+                    _index=0;
+                  }else{
+                      _index += 1;
+                  }
+             
+              console.log(_index);
+             $aJlItem.addClass('hide').eq(_index).removeClass('hide');
+            });
+         
     }
      //COMMUNICATION  banner
+ 
     function fnInitIMAGEBanner() {
         
         var swiperBanner = null,
@@ -70,12 +129,12 @@
                 text:['人文艺术瑰宝','融合东西方文化精髓，历经多年潜心创作，海马龙、海马凤、和平艾琳娜三大人文艺术瑰宝绽放，共同传播“和平、真爱”的世界愿景，成为企业人文地产品牌的创新特色，并参与了多项国际文化交流活动，得到了国内外友人的广告关注和好评']
             }, {
                 link: 'javascript:;',
-                img: '../assets/imgs/index/IMAGES2.png',
-                text:['和平艾琳娜','融合东西方文化精髓，历经多年潜心创作，海马龙、海马凤、和平艾琳娜三大人文艺术瑰宝绽放，共同传播“和平、真爱”的世界愿景，成为企业人文地产品牌的创新特色，并参与了多项国际文化交流活动，得到了国内外友人的广告关注和好评融合东西方文化精髓，历经多年潜心创作，海马龙、海马凤、和']
+                img: '../assets/imgs/index/IMAGES3.png',
+                text:['和平艾琳娜','东西方文化交融的完美艺术形象代表，她挺拔优雅地站立在涌动的海浪之上，意喻广阔的胸怀和爱心；头戴海马凤凤冠，象征和谐与幸运；左手执海马龙权杖，代表公正与威严；右手托起口衔橄榄枝的和平鸽，向世界传达着和平及真、善、美的精神。']
             },{
                 link: 'javascript:;',
-                img: '../assets/imgs/index/IMAGES3.png',
-                text:['海马龙','海马龙为海马与龙的结合，源自古老的东方大地，汲取西方文化的菁华，有着深厚的东西方文化历史底蕴。','海马龙','海马龙为海马与龙的结合，源自古老的东方大地，汲取西方文化的菁华，有着深厚的东西方文化历史底蕴。']
+                img: '../assets/imgs/index/IMAGES2.png',
+                text:['海马龙','东西方文化交融的完美艺术形象代表，她挺拔优雅地站立在涌动的海浪之上，意喻广阔的胸怀和爱心；头戴海马凤凤冠，象征和谐与幸运；左手执海马龙权杖，代表公正与威严；右手托起口衔橄榄枝的和平鸽，向世界传达着和平及真、善、美的精神。','海马凤','海马凤是海马与凤的结合，传承了东西文化的深刻意涵，与海马龙的缘圆结合，升华了爱的真谛。']
             }]
         };
         var _html = template('tplSlideIMAGE', _data);

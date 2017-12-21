@@ -23,12 +23,15 @@ $.fn.banqh = function(can){
 	var pictime;
 	var tpqhnum=0;
 	var xtqhnum=0;
+
+	var $oText = $("#text");
+	var $aTextItem = $oText.find('li');
 	
 	$(can.pic).find('ul').width(picnum*picw);
 	$(can.pic).find('ul li').width(picw);
 	$(can.pnum).find('ul').width(picminnum*picminw);
 	$(can.pnum).find('ul li').width(picminw-7);
-	
+
 	//点击小图切换大图
     $(can.pnum).find('li').click(function () {
         tpqhnum = xtqhnum = $(can.pnum).find('li').index(this);

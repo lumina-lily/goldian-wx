@@ -112,7 +112,7 @@
     			$oNewsList.animate({
     				height: _height
     			},200);
-    		} else {
+    		} else { 
     			_height = _height+($aItems.height()+6)*(itemLength-itemNum);
     			$oNewsList.animate({
     				height: _height
