@@ -6,6 +6,7 @@
 		fnInitIMAGEBanner();
 		// change communication
         fnChangeIndex1();
+
 		
 	});
     //COMMUNICATION  banner
@@ -89,7 +90,7 @@
             $oBtnPrev = $oSlideJl.find('.swiper-button-prev'),
             $oBtnNext = $oSlideJl.find('.swiper-button-next'),
             _len = $aJlItem.length;
-            console.log(_len);
+            // console.log(_len);
             _index = 0;
             $oBtnPrev.on('click',function(){
                 // _index = $(this).siblings('.swiper-wrapper').find('.swiper-slide-active').index();
@@ -98,7 +99,7 @@
                  }else{
                   _index -= 1;
                }
-              console.log(_index);
+              // console.log(_index);
              $aJlItem.addClass('hide').eq(_index).removeClass('hide');
             });
              $oBtnNext.on('click',function(){
@@ -109,7 +110,7 @@
                       _index += 1;
                   }
              
-              console.log(_index);
+              // console.log(_index);
              $aJlItem.addClass('hide').eq(_index).removeClass('hide');
             });
          
@@ -121,6 +122,8 @@
         var swiperBanner = null,
             $oSlide = $('#slide-IMAGE'),
             containerWidth = $oSlide.width();
+
+
         // 渲染swiper模板
         var _data = {
             list: [{
@@ -153,12 +156,10 @@
             speed: 500,
             autoplayDisableOnInteraction: false,
             preloadImages: false,
+            autoHeight:true,
             lazyLoading: true
         });
+           
     }
-    //slidebar  
-    // var headerH = $(".header").height(),
-    //     slideallW = $(".slideall").width(),
-    //     slideallH = $(".slideall").height() - headerH;
 
 })();
