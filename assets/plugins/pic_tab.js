@@ -24,9 +24,6 @@ $.fn.banqh = function(can){
 	var tpqhnum=0;
 	var xtqhnum=0;
 
-	var $oText = $("#text");
-	var $aTextItem = $oText.find('li');
-	
 	$(can.pic).find('ul').width(picnum*picw);
 	$(can.pic).find('ul li').width(picw);
 	$(can.pnum).find('ul').width(picminnum*picminw);
@@ -37,13 +34,15 @@ $.fn.banqh = function(can){
         tpqhnum = xtqhnum = $(can.pnum).find('li').index(this);
         show(tpqhnum);
 		minshow(xtqhnum);
+		textShow(xtqhnum);
     }).eq(can.order).trigger("click");
 
 	if(can.autoplay==true){
 		//自动播放
 		pictime = setInterval(function(){
 			show(tpqhnum);
-			minshow(tpqhnum)
+			minshow(tpqhnum);
+			textShow(xtqhnum);
 			tpqhnum++;
 			xtqhnum++;
 			if(tpqhnum==picnum){tpqhnum=0};	
@@ -59,6 +58,7 @@ $.fn.banqh = function(can){
 		tpqhnum--;
 		show(tpqhnum);
 		minshow(xtqhnum);	
+		textShow(xtqhnum);
 	})
 	$(can.next_btn).click(function(){
 		if(tpqhnum==picnum-1){tpqhnum=-1};
@@ -67,6 +67,7 @@ $.fn.banqh = function(can){
 		minshow(xtqhnum)
 		tpqhnum++;
 		show(tpqhnum);
+		textShow(xtqhnum);
 	})	
 	//大图左右切换	
 	$(can.prev).click(function(){
@@ -75,7 +76,8 @@ $.fn.banqh = function(can){
 		xtqhnum--;
 		tpqhnum--;
 		show(tpqhnum);
-		minshow(xtqhnum);	
+		minshow(xtqhnum);
+		textShow(xtqhnum);
 	})
 	$(can.next).click(function(){
 		if(tpqhnum==picnum-1){tpqhnum=-1};
@@ -84,10 +86,10 @@ $.fn.banqh = function(can){
 		minshow(xtqhnum)
 		tpqhnum++;
 		show(tpqhnum);
+		textShow(xtqhnum);
 	})
 	//小图切换过程
 	function minshow(xtqhnum){
-		console.log(xtqhnum);
 		var mingdjl_num =xtqhnum-can.min_picnum+2
 		var mingdjl_w=-mingdjl_num*picminw;
 		
@@ -104,6 +106,13 @@ $.fn.banqh = function(can){
 		$(can.pic).find('ul').stop().animate({'marginLeft':gdjl_w},can.delayTime);
 		
 		$(can.pnum).find('li').eq(tpqhnum).addClass("on").siblings(this).removeClass("on");
+	};
+	//文字切换过程
+	function textShow(tpqhnum){
+		var $oText = $("#text");
+		var $aTextItem = $oText.find('li');
+		
+		$aTextItem.eq(tpqhnum).removeClass('hide').siblings('li').addClass('hide');
 	};
 				
 }
