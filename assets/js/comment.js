@@ -251,6 +251,22 @@
 		  	$aMenuNav.addClass('hide').eq(_nav).removeClass('hide');
 		  	var $aMenuNavItem = $aMenuNav.eq(_nav).find('li');
 		  	$aMenuNavItem.removeClass('active').eq(_index).addClass('active');
+		  	
+		  	
+		  	var _width = $('.content').width(),
+           	_vid = "",
+           	_html = '<p style="text-align: center;width:'+_width+'px;"><iframe id="v-iframe" class="video_iframe" style="z-index:1; width:'+_width+'px; margin:0 auto; display:block;" src="http://v.qq.com/iframe/player.html?vid=',
+          	_html2 = '&amp;width='+_width+'&amp;auto=0" allowfullscreen="" frameborder="0"></iframe></p>';
+
+		  	if(myurl == 'zasx'){
+		  		_vid = "y0323pm2r1n";
+               	$(".nav-list .page-v").eq(1).html("");
+               	$(".nav-list .page-v").eq(0).html(_html+_vid+_html2);
+		  	}else if (myurl == 'zayx'){
+		  		_vid = "a0324jpbw0w";
+               	$(".nav-list .page-v").eq(0).html("");
+               	$(".nav-list .page-v").eq(1).html(_html+_vid+_html2);
+		  	}
 		}
 	}
 
