@@ -56,7 +56,7 @@
 		
         $oSlide.find('img').css({
             width: containerWidth,
-            height: containerWidth / 2
+            height: containerWidth / 2.5
         });
         if (swiperBanner !== null) {
             swiperBanner.destroy(true, true);
@@ -65,7 +65,7 @@
         swiperBanner = new Swiper('#slide', {
             pagination: '.swiper-pagination',
             width: containerWidth,
-            height: containerWidth / 2,
+            height: containerWidth / 2.5,
             loop: true,
             centeredSlides: true,
             autoplay: 5000,
@@ -270,5 +270,5 @@
 		}
 	}
 
-    
+         
 })();

@@ -20,62 +20,6 @@
              	year: '2017',
                 info: '今天，GOLDIAN与法国前总理交流真爱人文'
             }, {
-            	date: '7.14',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '7.13',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '7.12',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
-            	date: '7.11',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
-            	date: '7.10',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '7.09',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
-            	date: '7.08',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '7.07',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '7.06',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
-            	date: '7.05',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
-            	date: '7.04',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
-            	date: '6.14',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '6.13',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文的深远意义'
-            }, {
-            	date: '6.12',
-             	year: '2017',
-                info: '今天，GOLDIAN与法国前总理交流真爱人文'
-            }, {
             	date: '6.11',
              	year: '2017',
                 info: '今天，GOLDIAN与法国前总理交流真爱人文'
@@ -92,6 +36,7 @@
     		$oNewsList = $oContent.find('.news-list'),
     		$aItems = $oNewsList.find('li'),
     		$oBtnMore = $oContent.find('.btn-more'),
+            _length = $aItems.length;
     		_height = 0;
     	
     	var titHeight = $oTitles.height();
@@ -99,8 +44,13 @@
     	if(titHeight>36){
     		$oTitles.addClass('overflow').css('height','36px');
     	}
-    	
-    	_height = ($aItems.height()+6)*6;
+    	 
+        if(_length>6){
+           _height = ($aItems.height()+6)*6;
+         }else{
+           _height = ($aItems.height()+6)*_length;
+        
+         }
     	
     	$oNewsList.css('height',_height);
     	
