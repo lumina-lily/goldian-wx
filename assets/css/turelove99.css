@@ -17,7 +17,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   color: #fff;
   text-align: justify;
-  margin: 2px 0; }
+  margin: 2px 0;
+  line-height: 18px; }
 .turelove .pictureTL {
   margin: 6px 0; }
 .turelove .pictureTL img {
@@ -32,11 +33,11 @@ h1, h2, h3, h4, h5, h6 {
 .turelove .pictureTL img.col-50 {
   width: 50.4%; }
 .turelove .pictureTL img.col-pic {
-  width: 100%;
+  width: 99.4%;
   margin: 8px 0; }
 .turelove .pictureTL img.col-41 {
   width: 41%; }
-.turelove .pictureTL img.col-55 {
+clscls .turelove .pictureTL img.col-55 {
   width: 55.4%; }
 .turelove .pictureTL .half-left {
   float: left;
