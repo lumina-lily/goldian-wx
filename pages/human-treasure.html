@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../assets/plugins/swiper/swiper.min.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
-	    <link rel="stylesheet" type="text/css" href="../assets/css/humanistic-feelings.css"/>
+	    <link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
 	</head>
 	<body>
 		<!-- header begin -->
@@ -26,7 +26,7 @@
 			<div class="content">
 				
 				<!-- sliding door begin -->
-				<div class="sliding-door">
+				<!-- <div class="sliding-door">
 					<p class="banner">
 						<img src="../assets/imgs/humanistic-feelings/aln-banner.png"/>
 						<img src="../assets/imgs/humanistic-feelings/aln-banner.png" class="hide"/>
@@ -129,7 +129,31 @@
 							</p>
 						</li>
 					</ul>
-				</div>
+				</div> -->
+
+				<div class="IMAGE">
+	            	<!-- <div class="section-title">
+	                    <h4 class="title">人文形象 / IMAGE</h4>
+	                </div> -->
+	                
+					<div id="slide-IMAGE" class="swiper-container">
+						<div class="swiper-wrapper"></div>
+						
+					
+					</div>
+					<script id="tplSlideIMAGE" type="text/html">
+						{{each list as value i}}
+						<div class="swiper-slide">
+							<a href="{{value.link}}"><img class="slide-img" src="{{value.img}}" alt=""></a>
+							{{each value.text as text idx}}
+								<p class="word-jl" style="color:#fff;">{{text}}</p>
+							{{/each}}
+							
+						</div>
+						{{/each}}
+					</script>
+			      
+	            </div>   
 				<!-- sliding door end -->
 				
 			</div>
@@ -137,30 +161,6 @@
 			
 		</div>
 		<!-- container end -->
-		
-		<!-- footer begin -->
-		<div class="footer">
-			<img src="../assets/imgs/logo.png" class="logo"/>
-			<ul>
-				<li>© 2014 GOLDIAN GROUP All rights reservedtel</li>
-				<li>沪ICP备06026320号-5</li>
-				<li>Tel：86-21-58368866  Fax：86-21-58368676</li>   
-				<li>Email：goldian@goldian.com, 99@99love.com</li>
-				<li>地址 ：上海浦东张杨路500号华润时代22F</li>
-			</ul>
-			<div class="qr-code clearfix">
-				<p class="fl">
-					<img src="../assets/imgs/qr_code_goldian.jpg"/>
-					<span>高迪安</span>
-				</p>
-				<p class="fr">
-					<img src="../assets/imgs/qr_code_99love.jpg"/>
-					<span>99真爱</span>
-				</p>
-			</div>
-		</div>
-		<!-- footer end -->
-		
 		<!-- mask begin -->
 		<div id="mask" class="clearfix">
 			<ul class="menu-list fl">
@@ -211,6 +211,7 @@
 		<script src="../assets/plugins/artTemplate/dist/template.js"></script>
 		<script src="../assets/plugins/swiper/swiper.min.js"></script>
 		<script src="../assets/js/comment.js"></script>
+		<script src="../assets/js/index.js"></script>
 		<!-- javascript end -->
 	</body>
 </html>

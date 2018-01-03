@@ -23,6 +23,26 @@
             	date: '6.11',
              	year: '2017',
                 info: '今天，GOLDIAN与法国前总理交流真爱人文'
+            }, {
+                date: '6.11',
+                year: '2017',
+                info: '今天，GOLDIAN与法国前总理交流真爱人文'
+            }, {
+                date: '6.11',
+                year: '2017',
+                info: '今天，GOLDIAN与法国前总理交流真爱人文'
+            }, {
+                date: '6.11',
+                year: '2017',
+                info: '今天，GOLDIAN与法国前总理交流真爱人文'
+            }, {
+                date: '6.11',
+                year: '2017',
+                info: '今天，GOLDIAN与法国前总理交流真爱人文'
+            }, {
+                date: '6.11',
+                year: '2017',
+                info: '今天，GOLDIAN与法国前总理交流真爱人文'
             }]
         };
         var _html = template('tplNewsList', _data);
