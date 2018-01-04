@@ -115,7 +115,12 @@
     		$aMenuNav = $oMask.find('.menu-nav'),
     		$aMenuNavItem = $aMenuNav.find('li');
     	
+    	var _state = "",
+			_html1 = "",
+			_html0 = "";
+    	
     	$oMenu.on('click', function(){
+    		
     		if($(this).hasClass('active')){
     			
     			$oMask.animate({
@@ -127,6 +132,16 @@
     			$(this).removeClass('active');
     		} else {
     			
+    			_state = $(".nav-list .page-v").eq(0).html().length==0;
+				_html1 = $(".nav-list .page-v").eq(1).html();
+				_html0 = $(".nav-list .page-v").eq(0).html();
+    			
+    			if(_state){
+	               	$(".nav-list .page-v").eq(1).html("");
+	    		} else {
+	               	$(".nav-list .page-v").eq(0).html("");
+	    		}
+    			
     			// prohibit page sliding
 		    	$("body").on("touchmove",function(event){
 					event.preventDefault;
@@ -136,9 +151,17 @@
 				
 				$oMask.animate({
 					left: 0
-				},300);
+				},300,function(){
+					
+					if(_state){
+		               	$(".nav-list .page-v").eq(1).html(_html1);
+		    		} else {
+		               	$(".nav-list .page-v").eq(0).html(_html0);
+		    		}
+				});
 				
 				$(this).addClass('active');
+				
     		}
     		
     	});
@@ -181,6 +204,7 @@
     		$aMenuNavItem.removeClass('active');
     		$(this).addClass('active');
     	});
+    	
     }
     
     // get url param
