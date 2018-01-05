@@ -185,6 +185,18 @@
             .img {
                 width: 35.6%;
             }
+            .col-33{
+               width:33%;
+            }
+            .col-26{
+               width:26%;
+               margin:14px 3%;
+               img {
+                    width: 100%; 
+                    margin: 0 auto;
+                }
+            }
+
             dl {
                 width: 60%;
                 color: #fff;  
@@ -208,6 +220,11 @@
                         margin: 0 auto;
                     }
                 }
+            }
+            .col-31{
+                width:31%;
+                margin-top: 28px; 
+                padding-left:10px;
             }
         }
         
