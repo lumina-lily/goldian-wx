@@ -153,8 +153,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 .IMAGE #slide-IMAGE {
   margin: 16px 0 20px 0; }
-.IMAGE #slide-IMAGE .slide-img {
-  width: 47%;
+.IMAGE #slide-IMAGE .swiper-slide a {
+  width: 66%;
+  margin: 0 auto;
+  display: block; }
+.IMAGE #slide-IMAGE .swiper-slide a .slide-img {
+  width: 100%;
   margin: 0 auto; }
 
 /*# sourceMappingURL=index.css.map */

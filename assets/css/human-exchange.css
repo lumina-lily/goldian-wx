@@ -1,3 +1,7 @@
+		.container .content {
+		    width: 100%;
+		    margin: 0 auto;
+		}
 		.content-rwjl {
 			width: 100%;
 			overflow-x:hidden; 
@@ -48,23 +52,98 @@
 		.rwjl-pic-note {
 		  color:#b28956;
 		  line-height: 18px;
+		  text-align: justify;
+		  width:80%;
+		  margin:0 auto;
 		}
 		.img-active {
 			border:2px solid #b28956;
 		}
 
 
-	.ban{ max-width:640px; margin: 0 auto;}
-	.ban  img { display: block; width: 100%; }
-	#ban_pic{ width:100%; position:relative; overflow:hidden;}
-	.ban2 ul li{ float: left; }
-	.prev1{ position:absolute; top:50%; left:20px; width:7.4%; z-index:9; transform: translateY(-50%);}
-	.next1{ position:absolute; top:50%; right:20px; width:7.4%; z-index:9; transform: translateY(-50%);}
-	.min_pic{ margin-top:10px; width:100%; position: relative; overflow: hidden;}
-	.min_pic ul li{ float: left; margin-right:5px; padding:1px;}
-	.min_pic ul li.on{ border:1px solid #d3a358; padding:0;}
-	.prev_btn1{ position: absolute; top: 50%; left: 10px; width: 4%; transform: translateY(-50%); }
-	.next_btn1{ position: absolute; top: 50%; right: 10px; width: 4%; transform: translateY(-50%); }
-	#text { margin-top: 10px; }
-	.exchange-tit {color:#b28956;font-size: 16px;-webkit-margin-before: 0; -webkit-margin-after: 0;
-        line-height: 28px;}
+	.ban{ 
+		max-width:640px; 
+		margin: 0 auto;
+		margin-top:10px;
+	}
+	.ban  #ban_pic img {
+		 display: block;
+		 width: 100%;
+		 margin:0 auto; 
+	}
+	.ban  #ban_pic img {
+		 display: block;
+		 width: 80%;
+		 margin:0 auto; 
+	}
+
+	#ban_pic{ 
+		width:100%;
+		margin:0 auto; 
+		position:relative; 
+		overflow:hidden;
+	}
+	.ban2 ul li{ 
+		float: left; 
+	}
+	.prev1{ 
+		position:absolute; 
+		top:50%; 
+		left:2px; 
+		width:7.4%; 
+		z-index:9; 
+		transform: translateY(-50%);
+	}
+	.next1{ 
+		position:absolute; 
+		top:50%; 
+		right:2px; 
+		width:7.4%; 
+		z-index:9; 
+		transform: translateY(-50%);
+	}
+	.min_pic{ 
+		width:100%; 
+		margin:0 auto;
+		margin-top:10px; 
+		position: relative; 
+		overflow: hidden;
+	}
+	.min_pic ul li{ 
+		float: left; 
+		margin-right:5px; 
+		padding:1px;
+	}
+	.min_pic ul li.on{ 
+		border:1px solid #d3a358; 
+		padding:0;
+	}
+	.prev_btn1{ 
+		position: absolute;
+		 top: 50%; 
+		 left: 10px; 
+		 width: 4%; 
+		 transform: translateY(-50%); 
+	}
+	.next_btn1{ 
+		position: absolute; 
+		top: 50%; 
+		right: 10px; 
+		width: 4%; 
+		transform: translateY(-50%); 
+	}
+	#text { 
+		margin-top: 10px; 
+	}
+	.exchange-tit {
+		color:#b28956;
+		font-size: 16px;
+		-webkit-margin-before: 0; 
+		-webkit-margin-after: 0;
+        line-height: 28px;
+    }
+    .add-reque {
+    	width:80%; 
+    	margin:0 auto;
+    	overflow: hidden;
+    }

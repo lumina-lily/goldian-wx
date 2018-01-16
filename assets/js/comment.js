@@ -131,18 +131,17 @@
     			
     			$(this).removeClass('active');
     		} else {
-    			
-    			if($('.nav-list .page-v').length>0){
-    				_state = $(".nav-list .page-v").eq(0).html().length==0;
-    				_html1 = $(".nav-list .page-v").eq(1).html();
-    				_html0 = $(".nav-list .page-v").eq(0).html();
-        			
-        			if(_state){
-    	               	$(".nav-list .page-v").eq(1).html("");
-    	    		} else {
-    	               	$(".nav-list .page-v").eq(0).html("");
-    	    		}
-    			}
+    			if($('.nav-list .page-v').length>0) {
+	    			_state = $(".nav-list .page-v").eq(0).html().length==0;
+					_html1 = $(".nav-list .page-v").eq(1).html();
+					_html0 = $(".nav-list .page-v").eq(0).html();
+	    			
+	    			if(_state){
+		               	$(".nav-list .page-v").eq(1).html("");
+		    		} else {
+		               	$(".nav-list .page-v").eq(0).html("");
+		    		}
+	    		}
     			
     			// prohibit page sliding
 		    	$("body").on("touchmove",function(event){
@@ -154,13 +153,12 @@
 				$oMask.animate({
 					left: 0
 				},300,function(){
-					if($('.nav-list .page-v').length>0){
-						if(_state){
-			               	$(".nav-list .page-v").eq(1).html(_html1);
-			    		} else {
-			               	$(".nav-list .page-v").eq(0).html(_html0);
-			    		}
-					}
+					
+					if(_state){
+		               	$(".nav-list .page-v").eq(1).html(_html1);
+		    		} else {
+		               	$(".nav-list .page-v").eq(0).html(_html0);
+		    		}
 				});
 				
 				$(this).addClass('active');

@@ -10,6 +10,25 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
 	    <link rel="stylesheet" type="text/css" href="../assets/css/index.css"/>
+	    <style>
+	      .title {
+	      	 width: 86%;
+             margin: 0 auto;
+	      	background:url('../assets/imgs/index/rwgb-title-bg.png') no-repeat center;
+	      	color:#b28956; 
+	      	font-size:18px;
+	      	text-align:center;
+	      	line-height:36px;
+	       /* background-size: 100%;*/
+	       margin-top:18px;
+	      }	
+	       .tit {
+	      	color:#b28956; 
+	      	font-size:12px;
+	      	text-align:center;
+	      	line-height: 24px;
+	      }	
+	    </style>
 	</head>
 	<body>
 		<!-- header begin -->
@@ -32,6 +51,9 @@
 						{{each list as value i}}
 						<div class="swiper-slide">
 							<a href="{{value.link}}"><img class="slide-img" src="{{value.img}}" alt=""></a>
+
+							 <p class="title"  style="">{{value.title}}</p>
+							 <p class="tit">{{value.tit}}</p>
 							{{each value.text as text idx}}
 								<p class="word-jl" style="color:#fff;">{{text}}</p>
 							{{/each}}
