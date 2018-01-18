@@ -181,7 +181,7 @@ function fnChangeIndex1(){
             // width: containerWidth,
             loop: true,
             centeredSlides: true,
-            autoplay: 2000,
+            autoplay: 5000,
             speed: 500,
             autoplayDisableOnInteraction: false,
             preloadImages: false,
