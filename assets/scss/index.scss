@@ -185,7 +185,7 @@ h1, h2, h3,h4,h5,h6 {
 	#slide-IMAGE {
 	 margin:28px 0 20px 0;
 	    .swiper-slide a{
-	        width:86%;
+	        width:80%;
 	        margin: 0 auto;
             display: block;
 			.slide-img {
@@ -194,4 +194,25 @@ h1, h2, h3,h4,h5,h6 {
 			}
 	    }	
 	}
+	   .swiper-button {
+	      	    position: absolute;
+			    top: inherit;
+			    width: 24px;
+			    height: 24px;
+			    margin-top: 0px;
+			    z-index: 10;
+			    cursor: pointer;
+			    background-size: 24px 24px;
+			    bottom: 64%;
+	        }
+	        .swiper-button-prev {
+			    background-image: url(../imgs/icons/arrow-prev.png);
+			    left: 0;
+			    right: auto;
+			}
+			.swiper-button-next {
+			    background-image: url(../imgs/icons/arrow-next.png);
+			    right: 0;
+			    left: auto;
+			}
 }

@@ -19,7 +19,6 @@
 	      	font-size:18px;
 	      	text-align:center;
 	      	line-height:36px;
-	       /* background-size: 100%;*/
 	       margin-top:18px;
 	      }	
 	       .tit {
@@ -28,6 +27,27 @@
 	      	text-align:center;
 	      	line-height: 24px;
 	      }	
+	        .swiper-button {
+	      	    position: absolute;
+			    top: inherit;
+			    width: 24px;
+			    height: 24px;
+			    margin-top: 0px;
+			    z-index: 10;
+			    cursor: pointer;
+			    background-size: 24px 24px;
+			    bottom: 64%;
+	        }
+	        .swiper-button-prev {
+			    background-image: url(../assets/imgs/icons/arrow-prev.png);
+			    left: 0;
+			    right: auto;
+			}
+			.swiper-button-next {
+			    background-image: url(../assets/imgs/icons/arrow-next.png);
+			    right: 0;
+			    left: auto;
+			}
 	    </style>
 	</head>
 	<body>
@@ -46,12 +66,13 @@
 				<div class="IMAGE">
 					<div id="slide-IMAGE" class="swiper-container">
 						<div class="swiper-wrapper"></div>
+						<div class="swiper-button swiper-button-next"></div>
+						<div class="swiper-button swiper-button-prev"></div>
 					</div>
 					<script id="tplSlideIMAGE" type="text/html">
 						{{each list as value i}}
 						<div class="swiper-slide">
 							<a href="{{value.link}}"><img class="slide-img" src="{{value.img}}" alt=""></a>
-
 							 <p class="title"  style="">{{value.title}}</p>
 							 <p class="tit">{{value.tit}}</p>
 							{{each value.text as text idx}}

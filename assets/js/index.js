@@ -117,21 +117,21 @@
          
     }
 
-function fnChangeIndex1(){
-    $oBtnPrev.on('click',function(){
-        if(_index == 0){
-            _index =12;
-        }else{
-            _index -=1;
-        }
-        $aJlItem.addClass('hide').eq(_index).removeClass('hide');
-    });
-    $oBtnNext.on('click',function(){
-        if(_index == 12){
-            _index
-        }
-    })  
-}
+// function fnChangeIndex1(){
+//     $oBtnPrev.on('click',function(){
+//         if(_index == 0){
+//             _index =12;
+//         }else{
+//             _index -=1;
+//         }
+//         $aJlItem.addClass('hide').eq(_index).removeClass('hide');
+//     });
+//     $oBtnNext.on('click',function(){
+//         if(_index == 12){
+//             _index
+//         }
+//     })  
+// }
      //COMMUNICATION  banner
  
     function fnInitIMAGEBanner() {
@@ -186,7 +186,9 @@ function fnChangeIndex1(){
             autoplayDisableOnInteraction: false,
             preloadImages: false,
             autoHeight:true,
-            lazyLoading: true
+            lazyLoading: true,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next'
         });
            
     }

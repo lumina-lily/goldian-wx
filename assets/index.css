@@ -160,23 +160,5 @@ h1, h2, h3, h4, h5, h6 {
 .IMAGE #slide-IMAGE .swiper-slide a .slide-img {
   width: 100%;
   margin: 0 auto; }
-.IMAGE .swiper-button {
-  position: absolute;
-  top: inherit;
-  width: 24px;
-  height: 24px;
-  margin-top: 0px;
-  z-index: 10;
-  cursor: pointer;
-  background-size: 24px 24px;
-  bottom: 64%; }
-.IMAGE .swiper-button-prev {
-  background-image: url(../imgs/icons/arrow-prev.png);
-  left: 0;
-  right: auto; }
-.IMAGE .swiper-button-next {
-  background-image: url(../imgs/icons/arrow-next.png);
-  right: 0;
-  left: auto; }
 
 /*# sourceMappingURL=index.css.map */
