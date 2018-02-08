@@ -87,3 +87,207 @@ h1, h2, h3,h4,h5,h6 {
 .pictureTL .list {
 	   margin:6px 0;
 }
+.songs-setion {
+    margin:16px 0;  
+}
+.songs-setion img {
+	width: inherit;
+	display: inline-block;
+}
+.songs-setion .fl{
+   float:left;
+}
+.songs-bg {
+    width: 100%;
+    height:75px;
+    background: url(../assets/imgs/turelove99/gaossong-bg.png) no-repeat;
+    background-position: center center; 
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 99;
+}
+.songs-left {
+  width: 26.3%;
+  padding-left:30px;  
+  padding-top:14px;  
+}
+.songs-left p {
+    line-height: 24px;
+    font-size:12px;
+    margin-bottom: 0px; 
+}
+.songs-mid {
+	width: 26.3%;
+    margin: 0 16px;
+    margin-top:-7px;
+}
+.songs-mid img{
+  width:86px;
+  height:86px;
+}
+.songs-right{
+	width:29%;
+   position: absolute;
+   top:50%;
+   right:20px;
+   margin-top:-26px; 
+}
+.songs-right img{
+	width: 30px;
+	height:30px;
+    margin:0 8px;
+}
+.songs-left p.gaosongs-name {
+    color:#8e5506;
+    font-size: 14px;
+}
+.gaosongs-name img {
+	width:15px;
+	height:15px;
+	margin-top:4px;
+}
+.gaosongs-write {
+    color:#262626;
+    font-size: 12px;
+}
+.play-rotate {
+    width: 86px;
+    height:86px;
+    cursor: pointer;
+    animation: 2.6s infinite rotateMusic linear;
+    -webkit-animation: 2.6s infinite rotateMusic linear;
+}
+@keyframes rotateMusic {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg); } 
+}
+.song-right .play-box .left{
+	width:70px;
+	float:left;
+	.timeline {
+		　　　　width: 20.0rem;
+　　　　height: 4px;
+　　　　background-color: rgba(256, 256, 256, 0.6);
+　　　　border-radius: 5px;
+　　　　margin-top: 1.2rem;
+　　　　margin-left: 3.0rem;
+　　　　position: relative;
+　　　　z-index: 2;
+    	 width:70px;
+       margin:0 auto;
+        background-color:#6d4c21;
+         height: 12px;
+         border-radius: 6px;
+          margin-top:-20px; 
+          span{
+　　　　position: relative;
+　　　　width: 0px;
+　　　　height: 4px;
+　　　　background-color: #ec6538;
+　　　　border-radius: 5px;
+　　　　display: block;
+　　　　-webkit-transition: width ease-out 0.3s;
+　　　　-o-transition: width ease-out 0.3s;
+　　　　transition: width ease-out 0.3s;
+          }
+     span::after{
+        	　content: "";
+     
+　　　　position: absolute;
+　　　　top: -5px;
+　　　　right: -0.6rem;
+　　　　width: 1.2rem;
+　　　　height: 1.2rem;
+　　　　border-radius: 50%;
+　　　　background-color: #ec6538;
+        }
+	}
+	.info {
+		　　　　height: 26px;
+　　　　font-size: 0.8rem;
+　　　　color: #ffffff;
+　　　　position: relative;
+　　　　top: -0.65rem;
+　　　　z-index: 1;
+		.size{
+		  　float: left;
+	　　　　display: block;
+	        position: absolute;
+	        left: -16px;
+	        top: 38px;
+		}
+		.timeshow {
+			float: right;
+	　　　　display: block;
+			position: absolute;
+			right: -19px;
+		    top: 37px;
+		}
+	}
+
+}
+	
+// 　 .songs-right .play-box .left .timeline {
+// 　　　　width: 20.0rem;
+// 　　　　height: 4px;
+// 　　　　background-color: rgba(256, 256, 256, 0.6);
+// 　　　　border-radius: 5px;
+// 　　　　margin-top: 1.2rem;
+// 　　　　margin-left: 3.0rem;
+// 　　　　position: relative;
+// 　　　　z-index: 2;
+//     	 width:70px;
+//        margin:0 auto;
+//         background-color:#6d4c21;
+//          height: 12px;
+//          border-radius: 6px;
+//           margin-top:-20px; 
+// 　　}
+// 　 .songs-right .play-box .left .timeline span {
+// 　　　　position: relative;
+// 　　　　width: 0px;
+// 　　　　height: 4px;
+// 　　　　background-color: #ec6538;
+// 　　　　border-radius: 5px;
+// 　　　　display: block;
+// 　　　　-webkit-transition: width ease-out 0.3s;
+// 　　　　-o-transition: width ease-out 0.3s;
+// 　　　　transition: width ease-out 0.3s;
+// 　　}
+
+// 　 .songs-right .play-box .left .timeline span:after {
+// 　　　　content: "";
+// 　　　　position: absolute;
+// 　　　　top: -5px;
+// 　　　　right: -0.6rem;
+// 　　　　width: 1.2rem;
+// 　　　　height: 1.2rem;
+// 　　　　border-radius: 50%;
+// 　　　　background-color: #ec6538;
+// 　　}
+// 　 .songs-right .play-box .left info {
+// 　　　　height: 26px;
+// 　　　　font-size: 0.8rem;
+// 　　　　color: #ffffff;
+// 　　　　position: relative;
+// 　　　　top: -0.65rem;
+// 　　　　z-index: 1;
+
+// 　　}
+// 　 .songs-right .play-box .info .size {
+// 　　　　float: left;
+// 　　　　display: block;
+//         position: absolute;
+//         left: -16px;
+//         top: 38px;
+// 　　}
+
+// 　 .songs-right .play-box .info .timeshow {
+// 　　　　float: right;
+// 　　　　display: block;
+// 		position: absolute;
+// 		right: -19px;
+// 	    top: 37px;
+// 　　}
