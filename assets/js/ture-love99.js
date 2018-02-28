@@ -15,17 +15,25 @@
 			$oSongsMid = $oSongsBg.find('.songs-mid'),
 			$oSongsR = $oSongsBg.find('.songs-right'),
 			$oBtnPlayer = $oSongsR.find('.play-icon'),
-			$oBtnPause = $oSongsR.find('.pause-icon'),
+//			$oBtnPause = $oSongsR.find('.pause-icon'),
 			$oPlayer = $oSongsSetion.find('.player');
 		
 		$oBtnPlayer.on('click',function(){
-          $oSongsMid.addClass('play-rotate');
-		  	$oPlayer.get(0).play();			
+			if($(this).hasClass('pause-icon')){
+				$oSongsMid.removeClass('play-rotate');
+				$(this).removeClass('pause-icon');
+		  		$oPlayer.get(0).pause();
+			}else {
+				$oSongsMid.addClass('play-rotate');
+          		$(this).addClass('pause-icon');
+		  		$oPlayer.get(0).play();		
+			}
+          	
 		});
-		$oBtnPause.on('click',function(){
-          $oSongsMid.removeClass('play-rotate');
-		  	$oPlayer.get(0).pause();
-		});
+//		$oBtnPause.on('click',function(){
+//        $oSongsMid.removeClass('play-rotate');
+//		  	$oPlayer.get(0).pause();
+//		});
 		$('.all-breadcrumb-right li').on('click',function(){
 			 $oSongsMid.removeClass('play-rotate');
 		  	$oPlayer.get(0).pause();
@@ -42,5 +50,8 @@
   //           $oSongsMid.addClass('play-rotate');
 		//   	$oPlayer.get(0).play();	
   //      });
+//		$('.page-v').on('click',function(){
+//			console.log('-----'+$('#audio').get(0).paused);
+//		});
 	}
 })(window, jQuery);

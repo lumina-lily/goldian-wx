@@ -54,7 +54,7 @@
 	width:29%;
    position: absolute;
    top:50%;
-   right:20px;
+   right:30px;
    margin-top:-26px; 
 }
 .songs-right img{
@@ -88,60 +88,6 @@
   100% {
     transform: rotateZ(360deg); } 
 }
-/*.range {
-    width: 70px;
-    height: 12px;
-    background: #6d4c21;
-    border: 2px solid #6d4c21;
-    border-radius:6px;
-    -webkit-appearance: none !important;
-    position: absolute;
-    top: 66px;
-    left: 28px; 
-}*/
-/* 进度滑块 */
-/*input[type="range"] {
-    display: block;
-    width: 70%;
-    margin:0 auto;
-    padding:4px 0;
-}
-.range::-webkit-slider-thumb {
-    width: 20px;
-    height:20px; 
-    background-color: #bd9054;
-    border:#362610 1px solid;
-    border-radius: 50%;
-    cursor: pointer;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-}
-.range::-moz-slider-thumb {
-    width: 20px;
-    height:20px; 
-    background-color: #bd9054;
-    border:#362610 1px solid;
-    border-radius: 50%;
-    cursor: pointer;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-}
-.gress-bar .cur {
-    position: absolute;
-    top:64px;
-    left:-20px;
-    color:#8e5506;
-}
-.gress-bar .max {
-    position: absolute;
-    top:64px;
-    right:-20px;
-    color:#8e5506;
-}*/
-/*.play-box {
-　　　　width: 100%;
-　　　　margin-left: 3.8rem;
-　　}*/
 
 　 .songs-right .play-box .left {
 　　　　width: 25.6rem;
@@ -419,37 +365,22 @@
 			                             <img src="../assets/imgs/turelove99/rotary-btn.png" alt="">
 			                        </div>
 			                        <div class="songs-right fl">
-			                             <img class="play-icon" src="../assets/imgs/turelove99/gaos-play-icon.png" alt="">
-			                             <img  class="pause-icon" src="../assets/imgs/turelove99/gaos-pause-icon.png" alt="">
-			                            <div class="play-box">
+			                             <a href="javscript:;" class="play-icon"></a>
+			                             <!--<img class="play-icon" src="../assets/imgs/turelove99/btn_play.png" alt="">
+			                             <img  class="pause-icon" src="../assets/imgs/turelove99/gaos-pause-icon.png" alt="">-->
+		                            <div class="play-box">
 							　　　　　　    <div class="left">
-								　　　　　　　　<div class="timeline" style=" width:70px; margin:0 auto; background-color:#6d4c21; height: 12px;border-radius: 6px; margin-top:-20px; ">
-													<p style="background-color: #dfb681;height: 6px; display:inline-block; border: 2px solid #6d4c21;border-radius: 6px;position:relative;">
-													    <span style="position: absolute; top:-5px;
-													    right:-14px; width: 14px;height:14px; background-color: #bd9054; border-radius: 50%; border:#362610 1px solid;"></span> 
-												    </p>
-								                </div>
-								　　　　　　　　<div class="info" style="　height: 26px;
-　　　　font-size: 0.8rem;
-　　
-　　　　position: relative;
-　　　　top: -0.65rem;
-　　　　z-index: 1;">
-								　　　　　　　　　　<span class="size" style="　　float: left;
-　　　　display: block;
-        position: absolute;
-        left: -16px;
-        top: 38px;
-        color: #8e5506;">00:00</span>
-								　　　　　　　　　　<span class="timeshow" style="　float: right;
-　　　　display: block;
-		position: absolute;
-		right: -19px;
-	    top: 37px;
-	    color: #8e5506;">00:00</span>
+								　　　　　　　　<div class="timeline" style=" width:100px; margin:0 auto 0 10px; background-color:#6d4c21; height: 12px;border-radius: 6px; margin-top:-20px; ">
+												<p style="background-color: #dfb681;height: 10px; display:inline-block; border-radius: 6px;position:relative;">
+												    <!--<span style="position: absolute; top:-5px;
+												    right:-14px; width: 14px;height:14px; background-color: #bd9054; border-radius: 50%; border:#362610 1px solid;"></span> -->
+											    </p>
+							                </div>
+								　　　　　　　　<div class="info" style="　height: 26px; font-size: 0.8rem; position: absolute; top: -20px; left: 64px; z-index: 1;">
+								　　　　　　　　　　<span class="size" style=" float: left; display: block; position: absolute; left: -16px; top: 37px; color: #8e5506;">00:00</span><span class="timeshow" style="　float: left; display: block; position: absolute; left: 20px; top: 37px; color: #8e5506;">/00:00</span>
 								　　　　　　　　</div>
 							　　　　　　     </div>
-　　　　                                </div>
+　　　　                                					</div>
 			                        </div>
 			                    </div>
 		                        <audio hidden="hidden" loop="loop" class="player" id="audio">
@@ -529,6 +460,7 @@
 			         $("#v-iframe").attr("src",_src);
 			        // alert($("#v-iframe").length);
 			      });
+					 
 			    })
 			    $(".nav a").on("click",(function(){
                    var _index = $(this).index(),
@@ -610,7 +542,7 @@
 　　　　　　　　　　t = Math.floor(t);
 　　　　　　　　　　var playTime = secondToMin(audio.currentTime);
 　　　　　　　　　　$(".size").html(playTime);
-　　　　　　　　　　$('.timeshow').text(secondToMin(audio.duration))
+　　　　　　　　　　$('.timeshow').text('/'+secondToMin(audio.duration))
 　　　　　　　　　　$('.timeline').children().css({
 　　　　　　　　　　　　width: (t / audio.duration).toFixed(4) * 100 + "%"
 　　　　　　　　　　})
