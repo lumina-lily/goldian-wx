@@ -129,13 +129,20 @@ h1, h2, h3,h4,h5,h6 {
 	width:29%;
    position: absolute;
    top:50%;
-   right:20px;
+   right:30px;
    margin-top:-26px; 
 }
-.songs-right img{
+.songs-right .play-icon{
+    display: block;
 	width: 30px;
 	height:30px;
     margin:0 8px;
+    background: url(../imgs/turelove99/gaos-play-icon.png) no-repeat;
+    background-size: contain;
+}
+.songs-right .play-icon.pause-icon {
+    background: url(../imgs/turelove99/gaos-pause-icon.png) no-repeat;
+    background-size: contain;
 }
 .songs-left p.gaosongs-name {
     color:#8e5506;
@@ -228,4 +235,3 @@ h1, h2, h3,h4,h5,h6 {
 	}
 
 }
-	
