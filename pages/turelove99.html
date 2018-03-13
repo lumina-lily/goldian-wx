@@ -10,147 +10,6 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/comment.css"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/turelove99.css"/>
-		<style>
-			/*songs-bg*/
-.songs-setion {
-    margin:16px 0;  
-}
-.songs-setion img {
-	width: inherit;
-	display: inline-block;
-}
-.songs-setion .fl{
-   float:left;
-}
-.songs-bg {
-    width: 100%;
-    height:75px;
-    background: url(../assets/imgs/turelove99/gaossong-bg.png) no-repeat;
-    background-position: center center; 
-    background-size: 100% 100%;
-    position: relative;
-    z-index: 99;
-}
-.songs-left {
-  width: 26.3%;
-  padding-left:30px;  
-  padding-top:14px;  
-}
-.songs-left p {
-    line-height: 24px;
-    font-size:12px;
-    margin-bottom: 0px; 
-}
-.songs-mid {
-	width: 26.3%;
-    margin: 0 16px;
-    margin-top:-7px;
-}
-.songs-mid img{
-  width:86px;
-  height:86px;
-}
-.songs-right{
-	width:29%;
-   position: absolute;
-   top:50%;
-   right:30px;
-   margin-top:-26px; 
-}
-.songs-right img{
-	width: 30px;
-	height:30px;
-    margin:0 8px;
-}
-.songs-left p.gaosongs-name {
-    color:#8e5506;
-    font-size: 14px;
-}
-.gaosongs-name img {
-	width:15px;
-	height:15px;
-	margin-top:4px;
-}
-.gaosongs-write {
-    color:#262626;
-    font-size: 12px;
-}
-.play-rotate {
-    width: 86px;
-    height:86px;
-    cursor: pointer;
-    animation: 2.6s infinite rotateMusic linear;
-    -webkit-animation: 2.6s infinite rotateMusic linear;
-}
-@keyframes rotateMusic {
-  0% {
-    transform: rotateZ(0deg); }
-  100% {
-    transform: rotateZ(360deg); } 
-}
-
-　 .songs-right .play-box .left {
-　　　　width: 25.6rem;
-　　　　float: left;
-　　}	
-　 .songs-right .play-box .left p.timeline {
-　　　　width: 20.0rem;
-　　　　/*width: 70%;*/
-　　　　height: 4px;
-　　　　background-color: rgba(256, 256, 256, 0.6);
-　　　　border-radius: 5px;
-　　　　margin-top: 1.2rem;
-　　　　margin-left: 3.0rem;
-　　　　position: relative;
-　　　　z-index: 2;
-　　}
-　 .songs-right .play-box .left p.timeline span {
-　　　　position: relative;
-　　　　width: 0px;
-　　　　height: 4px;
-　　　　background-color: #ec6538;
-　　　　border-radius: 5px;
-　　　　display: block;
-　　　　-webkit-transition: width ease-out 0.3s;
-　　　　-o-transition: width ease-out 0.3s;
-　　　　transition: width ease-out 0.3s;
-　　}
-
-　 .songs-right .play-box .left p.timeline span:after {
-　　　　content: "";
-　　　　position: absolute;
-　　　　top: -5px;
-　　　　right: -0.6rem;
-　　　　width: 1.2rem;
-　　　　height: 1.2rem;
-　　　　border-radius: 50%;
-　　　　background-color: #ec6538;
-　　}
-　 .songs-right .play-box .left div.info {
-　　　　height: 26px;
-　　　　font-size: 0.8rem;
-　　　　color: #ffffff;
-　　　　position: relative;
-　　　　top: -0.65rem;
-　　　　z-index: 1;
-
-　　}
-　 .songs-right .play-box .info .size {
-　　　　float: left;
-　　　　display: block;
-        position: absolute;
-        left: -16px;
-        top: 38px;
-　　}
-
-　 .songs-right .play-box .info .timeshow {
-　　　　float: right;
-　　　　display: block;
-		position: absolute;
-		right: -19px;
-	    top: 37px;
-　　}
-		</style>
 	</head>
 	<body>
 		<!-- header begin -->
@@ -352,41 +211,8 @@
 						   	<p class="para">
 						   	瑞士国宝级八音盒Reuge，结合海马龙、海马凤、和平艾琳娜三大瑰宝，对真爱之歌进行了完美演绎。</p>
 						   	<p class="para">真爱之歌的旋律，激发人们感受爱、体会爱、传递爱。</p>
-						   	<div class="songs-setion">
-			                    <div class="songs-bg clearfix">
-			                        <div class="songs-left fl">
-			                            <p class="gaosongs-name">
-			                               久久真爱
-			                               <img src="../assets/imgs/turelove99/gaossong-icon.png" alt="">
-			                            </p>
-			                            <p class="gaosongs-write">制作人：高晓松</p>
-			                        </div>
-			                        <div class="songs-mid fl">
-			                             <img src="../assets/imgs/turelove99/rotary-btn.png" alt="">
-			                        </div>
-			                        <div class="songs-right fl">
-			                             <a href="javscript:;" class="play-icon"></a>
-			                             <!--<img class="play-icon" src="../assets/imgs/turelove99/btn_play.png" alt="">
-			                             <img  class="pause-icon" src="../assets/imgs/turelove99/gaos-pause-icon.png" alt="">-->
-		                            <div class="play-box">
-							　　　　　　    <div class="left">
-								　　　　　　　　<div class="timeline" style=" width:100px; margin:0 auto 0 10px; background-color:#6d4c21; height: 12px;border-radius: 6px; margin-top:-20px; ">
-												<p style="background-color: #dfb681;height: 10px; display:inline-block; border-radius: 6px;position:relative;">
-												    <!--<span style="position: absolute; top:-5px;
-												    right:-14px; width: 14px;height:14px; background-color: #bd9054; border-radius: 50%; border:#362610 1px solid;"></span> -->
-											    </p>
-							                </div>
-								　　　　　　　　<div class="info" style="　height: 26px; font-size: 0.8rem; position: absolute; top: -20px; left: 64px; z-index: 1;">
-								　　　　　　　　　　<span class="size" style=" float: left; display: block; position: absolute; left: -16px; top: 37px; color: #8e5506;">00:00</span><span class="timeshow" style="　float: left; display: block; position: absolute; left: 20px; top: 37px; color: #8e5506;">/00:00</span>
-								　　　　　　　　</div>
-							　　　　　　     </div>
-　　　　                                					</div>
-			                        </div>
-			                    </div>
-		                        <audio hidden="hidden" loop="loop" class="player" id="audio">
-		                            <source src="../assets/imgs/music/99love.mp3" type="audio/mpeg" />
-		                        </audio>
-                            </div>
+						   	<!-- http://sc1.111ttt.cn/2017/1/11/11/304112004168.mp3 -->
+                            <audio src="http://10.1.1.123:8020/goldian-wx/assets/imgs/music/99love.mp3" preload="auto"></audio>
 						   	<div class="pictureTL">
 						   		<img class="col-pic" src="../assets/imgs/turelove99/tureL-pic11.png" alt="">
 						   	</div>
@@ -450,7 +276,26 @@
 		<script src="../assets/plugins/artTemplate/dist/template.js"></script>
 		<script src="../assets/plugins/swiper/swiper.min.js"></script>
 		<script src="../assets/js/comment.js"></script>	
-		<script src="../assets/js/ture-love99.js"></script>	
+		<!--<script src="../assets/js/ture-love99.js"></script>-->
+		<script>
+			var _gaq = [
+				['_setAccount', 'UA-20257902-1'],
+				['_trackPageview']
+			];
+			(function(d, t) {
+				var g = d.createElement(t),
+					s = d.getElementsByTagName(t)[0];
+				g.async = 1;
+				g.src = '//www.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g, s)
+			}(document, 'script'))
+		</script>
+		<script src="../assets/plugins/audiojs/audio.min.js"></script>
+		<script>
+			audiojs.events.ready(function() {
+				audiojs.createAll();
+			});
+		</script>
 		<script>
 		    (function(){  
 			    $(function(){
@@ -489,77 +334,77 @@
         })(); 
 		</script>	
 		<script type="text/javascript">
-　　　　$(function() {
-　　　　　　AudioControl('audio')
-
-　　　　　　function AudioControl(id) {
-　　　　　　// 音频控制进度条
-　　　　　　　　var audio = document.getElementById(id);
-　　　　　　　　$(audio).on('loadedmetadata', function() {
-　　　　　　　　　　audio.pause();
-　　　　　　　　　　// 进度条控制
-　　　　　　　　　　$(document).on('touchend', '.timeline', function(e) {
-　　　　　　　　　　var x = e.originalEvent.changedTouches[0].clientX - this.offsetLeft;
-　　　　　　　　　　var X = x < 0 ? 0 : x;
-　　　　　　　　　　var W = $(this).width();
-　　　　　　　　　　var place = X > W ? W : X;
-　　　　　　　　　　　　audio.currentTime = (place / W).toFixed(2) * audio.duration
-　　　　　　　　　　　　$(this).children().css({
-　　　　　　　　　　　　　　width: (place / W).toFixed(2) * 100 + "%"
-　　　　　　　　　　　　})
-　　　　　　　　　　});
-　　　　　　　　　　$(document).on('click', '.timeline', function(e) {
-　　　　　　　　　　var x = e.originalEvent.changedTouches[0].clientX - this.offsetLeft;
-　　　　　　　　　　var X = x < 0 ? 0 : x;
-　　　　　　　　　　var W = $(this).width();
-　　　　　　　　　　var place = X > W ? W : X;
-　　　　　　　　　　　　audio.currentTime = (place / W).toFixed(2) * audio.duration
-　　　　　　　　　　　　$(this).children().css({
-　　　　　　　　　　　　　　width: (place / W).toFixed(2) * 100 + "%"
-　　　　　　　　　　　　})
-　　　　　　　　　　});
-　　　　　　　　　　// 播放
-// 　　　　　　　　　　$("#js-play").on('click', function() {
-// 　　　　　　　　　　　　alert("播放")
-// 　　　　　　　　　　　　$(this).hide();
-// 　　　　　　　　　　　　$('#js-pause').show();
-// 　　　　　　　　　　　　audio.play()
-// 　　　　　　　　　　});
-　　　　　　　　　　　　// 暂停
-// 　　　　　　　　　　$('#js-pause').on('click',function() {
-// 　　　　　　　　　　　　alert("暂停")
-// 　　　　　　　　　　　　$(this).hide();
-// 　　　　　　　　　　　　$('#js-play').show();
-// 　　　　　　　　　　　　　　audio.pause()
-// 　　　　　　　　　　});
-　　　　　　　　})
-　　　　　　　　setInterval(function() {
-　　　　　　　　　　var currentTime = audio.currentTime;
-　　　　　　　　　　setTimeShow(currentTime);
-　　　　　　　　}, 1000);
-　　　　　　　　// 设置播放时间
-　　　　　　　　function setTimeShow(t) {
-　　　　　　　　　　t = Math.floor(t);
-　　　　　　　　　　var playTime = secondToMin(audio.currentTime);
-　　　　　　　　　　$(".size").html(playTime);
-　　　　　　　　　　$('.timeshow').text('/'+secondToMin(audio.duration))
-　　　　　　　　　　$('.timeline').children().css({
-　　　　　　　　　　　　width: (t / audio.duration).toFixed(4) * 100 + "%"
-　　　　　　　　　　})
-　　　　　　　　}
-　　　　　　　　// 计算时间
-　　　　　　　　function secondToMin(s) {
-　　　　　　　　　　var MM = Math.floor(s / 60);
-　　　　　　　　　　var SS = s % 60;
-　　　　　　　　　　if(MM < 10)
-　　　　　　　　　　　　MM = "0" + MM;
-　　　　　　　　　　if(SS < 10)
-　　　　　　　　　　　　SS = "0" + SS;
-　　　　　　　　　　var min = MM + ":" + SS;
-　　　　　　　　　　return min.split('.')[0];
-　　　　　　　　　　}
-　　　　　　　　}
-　　　　})
+//　　　　$(function() {
+//　　　　　　AudioControl('audio')
+//
+//　　　　　　function AudioControl(id) {
+//　　　　　　// 音频控制进度条
+//　　　　　　　　var audio = document.getElementById(id);
+//　　　　　　　　$(audio).on('loadedmetadata', function() {
+//　　　　　　　　　　audio.pause();
+//　　　　　　　　　　// 进度条控制
+//　　　　　　　　　　$(document).on('touchend', '.timeline', function(e) {
+//　　　　　　　　　　var x = e.originalEvent.changedTouches[0].clientX - this.offsetLeft;
+//　　　　　　　　　　var X = x < 0 ? 0 : x;
+//　　　　　　　　　　var W = $(this).width();
+//　　　　　　　　　　var place = X > W ? W : X;
+//　　　　　　　　　　　　audio.currentTime = (place / W).toFixed(2) * audio.duration
+//　　　　　　　　　　　　$(this).children().css({
+//　　　　　　　　　　　　　　width: (place / W).toFixed(2) * 100 + "%"
+//　　　　　　　　　　　　})
+//　　　　　　　　　　});
+//　　　　　　　　　　$(document).on('click', '.timeline', function(e) {
+//　　　　　　　　　　var x = e.originalEvent.changedTouches[0].clientX - this.offsetLeft;
+//　　　　　　　　　　var X = x < 0 ? 0 : x;
+//　　　　　　　　　　var W = $(this).width();
+//　　　　　　　　　　var place = X > W ? W : X;
+//　　　　　　　　　　　　audio.currentTime = (place / W).toFixed(2) * audio.duration
+//　　　　　　　　　　　　$(this).children().css({
+//　　　　　　　　　　　　　　width: (place / W).toFixed(2) * 100 + "%"
+//　　　　　　　　　　　　})
+//　　　　　　　　　　});
+//　　　　　　　　　　// 播放
+//// 　　　　　　　　　　$("#js-play").on('click', function() {
+//// 　　　　　　　　　　　　alert("播放")
+//// 　　　　　　　　　　　　$(this).hide();
+//// 　　　　　　　　　　　　$('#js-pause').show();
+//// 　　　　　　　　　　　　audio.play()
+//// 　　　　　　　　　　});
+//　　　　　　　　　　　　// 暂停
+//// 　　　　　　　　　　$('#js-pause').on('click',function() {
+//// 　　　　　　　　　　　　alert("暂停")
+//// 　　　　　　　　　　　　$(this).hide();
+//// 　　　　　　　　　　　　$('#js-play').show();
+//// 　　　　　　　　　　　　　　audio.pause()
+//// 　　　　　　　　　　});
+//　　　　　　　　})
+//　　　　　　　　setInterval(function() {
+//　　　　　　　　　　var currentTime = audio.currentTime;
+//　　　　　　　　　　setTimeShow(currentTime);
+//　　　　　　　　}, 1000);
+//　　　　　　　　// 设置播放时间
+//　　　　　　　　function setTimeShow(t) {
+//　　　　　　　　　　t = Math.floor(t);
+//　　　　　　　　　　var playTime = secondToMin(audio.currentTime);
+//　　　　　　　　　　$(".size").html(playTime);
+//　　　　　　　　　　$('.timeshow').text('/'+secondToMin(audio.duration))
+//　　　　　　　　　　$('.timeline').children().css({
+//　　　　　　　　　　　　width: (t / audio.duration).toFixed(4) * 100 + "%"
+//　　　　　　　　　　})
+//　　　　　　　　}
+//　　　　　　　　// 计算时间
+//　　　　　　　　function secondToMin(s) {
+//　　　　　　　　　　var MM = Math.floor(s / 60);
+//　　　　　　　　　　var SS = s % 60;
+//　　　　　　　　　　if(MM < 10)
+//　　　　　　　　　　　　MM = "0" + MM;
+//　　　　　　　　　　if(SS < 10)
+//　　　　　　　　　　　　SS = "0" + SS;
+//　　　　　　　　　　var min = MM + ":" + SS;
+//　　　　　　　　　　return min.split('.')[0];
+//　　　　　　　　　　}
+//　　　　　　　　}
+//　　　　})
 </script>
 		<!-- javascript end -->
 	</body>
